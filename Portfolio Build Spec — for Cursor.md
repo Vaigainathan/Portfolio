@@ -8,7 +8,7 @@ One static page built to match the Figma design exactly, deployed on Vercel. No 
 
 | Choice | Decision | Why |
 | --- | --- | --- |
-| Framework | Next.js 15, App Router, TypeScript | Static export, best-in-class SEO and OG tags, Vercel deploy in one step |
+| Framework | Next.js 16, App Router, TypeScript | Static export, best-in-class SEO and OG tags, Vercel deploy in one step |
 | Styling | Tailwind CSS v4 with CSS custom properties | Tokens live in one place and can be swapped without touching components |
 | Animation | GSAP + ScrollTrigger, Lenis for smooth scroll | Matches the agreed motion plan; no 3D, no WebGL |
 | Images | `next/image`, AVIF/WebP, lazy below the fold | Screenshots are the heaviest assets on the page |

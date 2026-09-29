@@ -10,6 +10,7 @@
   --surface: linear-gradient(to bottom, var(--surface-from), var(--surface-to));
   --surface-2: rgba(24, 24, 27, 0.8);
   --surface-2-soft: rgba(24, 24, 27, 0.6);
+  --surface-tag: rgba(255, 255, 255, 0.03);
   --glow-top: radial-gradient(
     6364px circle at 640px 0,
     rgba(61, 214, 140, 0.08) 0%,
@@ -42,6 +43,7 @@
   --accent-teal: #34d399;
   --status-tint: rgba(16, 185, 129, 0.1);
   --status-border: rgba(16, 185, 129, 0.2);
+  --status-tint-deep: rgba(2, 44, 34, 0.6);
   /* Action green: WhatsApp button only */
   --accent-action: #25d366;
   --accent-action-text: #09090b;
@@ -51,6 +53,8 @@
   --cta-height: 48px;
   /* Hero content sits 192px from the page top; the sticky header occupies 64px + 1px border of flow */
   --hero-offset: calc(192px - var(--header-height) - 1px);
+  /* Height of the small status pill: 16.5px line + 2px padding + 1px border, each side */
+  --status-pill-height: 22.5px;
 }
 
 @theme inline {
@@ -61,6 +65,7 @@
   --color-surface-to: var(--surface-to);
   --color-surface-2: var(--surface-2);
   --color-surface-2-soft: var(--surface-2-soft);
+  --color-surface-tag: var(--surface-tag);
 
   --color-border: var(--border);
   --color-border-card: var(--border-card);
@@ -78,12 +83,14 @@
   --color-accent-teal: var(--accent-teal);
   --color-status-tint: var(--status-tint);
   --color-status-border: var(--status-border);
+  --color-status-tint-deep: var(--status-tint-deep);
   --color-accent-action: var(--accent-action);
   --color-accent-action-text: var(--accent-action-text);
 
   --spacing-header: var(--header-height);
   --spacing-cta: var(--cta-height);
   --spacing-hero-offset: var(--hero-offset);
+  --spacing-status-pill: var(--status-pill-height);
 }
 
 @theme {
@@ -147,9 +154,38 @@
   --text-status--line-height: 16.5px;
   --text-status--font-weight: 700;
 
+  --text-section-label: 12px;
+  --text-section-label--line-height: 16px;
+  --text-section-label--letter-spacing: 1.2px;
+  --text-section-label--font-weight: 500;
+
+  --text-heading: 36px;
+  --text-heading--line-height: 40px;
+  --text-heading--letter-spacing: -0.9px;
+  --text-heading--font-weight: 700;
+
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 24px;
+  --text-body-lg--font-weight: 400;
+
+  --text-card-heading: 20px;
+  --text-card-heading--line-height: 28px;
+  --text-card-heading--letter-spacing: -0.5px;
+  --text-card-heading--font-weight: 700;
+
+  --text-body: 14px;
+  --text-body--line-height: 22.75px;
+  --text-body--font-weight: 400;
+
+  --text-tag: 11px;
+  --text-tag--line-height: 16.5px;
+  --text-tag--font-weight: 400;
+
   --radius-pill: 9999px;
   --radius-card: 16px;
   --radius-action: 12px;
+  --radius-tile: 12px;
+  --radius-tag: 4px;
 
   --shadow-card: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
     0px 8px 10px -6px rgba(0, 0, 0, 0.1);
@@ -171,6 +207,12 @@
 
 @utility bg-surface {
   background-image: var(--surface);
+}
+
+/* html owns the base colour so the glow stays on body, whose box spans the whole page
+   (html is h-full, so a propagated body background would stop at one viewport) */
+html {
+  background-color: var(--bg);
 }
 
 body {

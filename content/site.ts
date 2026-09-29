@@ -1,7 +1,6 @@
 // TODO before launch: each anchor below needs a section with the matching id,
 // or it becomes a dead link.
 //   #work          — Selected client work
-//   #capabilities  — What I build
 //   #process       — Process
 //   #about         — About
 //   #contact       — Contact CTA

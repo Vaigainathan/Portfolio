@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Card } from "@/components/ui/Card";
 import { ArrowDown, ArrowRight, BadgeVerified, ChartTrend } from "@/components/ui/icons";
 import { Pill } from "@/components/ui/Pill";
 import { site, type ProofCard, type ProofCardIcon } from "@/content/site";
@@ -61,9 +62,9 @@ export function Hero() {
 
 function ProofCardItem({ card }: { card: ProofCard }) {
   return (
-    <article className="flex flex-col rounded-card border border-border-card bg-surface p-7 shadow-card">
+    <Card className="flex flex-col p-7">
       <div className="flex flex-col gap-2 pb-1">
-        <div className="flex items-center justify-between">
+        <div className="flex h-status-pill items-center justify-between">
           <span className="font-mono text-label text-text-muted uppercase">{card.label}</span>
           {card.status ? (
             <Pill size="sm">{card.status}</Pill>
@@ -78,6 +79,6 @@ function ProofCardItem({ card }: { card: ProofCard }) {
         <h3 className="text-card-title text-text">{card.title}</h3>
       </div>
       <p className="pt-2 text-card-body text-text-dim">{card.body}</p>
-    </article>
+    </Card>
   );
 }

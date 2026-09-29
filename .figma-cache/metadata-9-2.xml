@@ -1,0 +1,731 @@
+<frame id="9:2" name="Portfolio" x="-945" y="175" width="1280" height="6486.75">
+  <frame id="9:3" name="Main" x="0" y="0" width="1280" height="6331.75">
+    <frame id="9:4" name="Section - HERO SECTION" x="192" y="192" width="896" height="781">
+      <frame id="9:5" name="Human availability pill:margin" x="296" y="0" width="304" height="58">
+        <frame id="9:6" name="Human availability pill" x="0" y="0" width="304" height="26">
+          <rounded-rectangle id="9:7" name="Background" x="13" y="10" width="6" height="6" />
+          <frame id="9:8" name="Container" x="27" y="5" width="268" height="16">
+            <text id="9:9" name="Available for new client partnerships" x="0" y="0" width="268" height="16" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="9:10" name="Heading 1:margin" x="227.63999938964844" y="58" width="440.7200012207031" height="168">
+        <frame id="9:11" name="Heading 1" x="0" y="0" width="440.7200012207031" height="144">
+          <text id="9:12" name="Text" x="0" y="0" width="440.7200012207031" height="144" />
+        </frame>
+      </frame>
+      <frame id="9:13" name="Margin" x="0" y="226" width="896" height="96">
+        <text id="9:14" name="Text" x="132.6699981689453" y="0" width="630.6400146484375" height="56" />
+      </frame>
+      <frame id="9:15" name="CTA Cluster" x="233.2516632080078" y="322" width="429.4966735839844" height="50">
+        <frame id="9:16" name="Link" x="0" y="1" width="166.38999938964844" height="48">
+          <frame id="9:17" name="Container" x="24" y="14" width="96.38999938964844" height="20">
+            <text id="9:18" name="Text" x="0" y="0" width="96.38999938964844" height="20" />
+          </frame>
+          <frame id="9:19" name="Margin" x="128.38999938964844" y="18.66666603088379" width="14" height="10.666666984558105">
+            <frame id="9:20" name="Container" x="0" y="0" width="10.666666984558105" height="10.666666984558105">
+              <vector id="9:21" name="Icon" x="0" y="0" width="10.666666984558105" height="10.666666984558105" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="9:22" name="Link" x="182.38999938964844" y="0" width="247.10667419433594" height="50">
+          <frame id="9:23" name="Container" x="21" y="15" width="186.44000244140625" height="20">
+            <text id="9:24" name="Text" x="0" y="0" width="186.44000244140625" height="20" />
+          </frame>
+          <frame id="9:25" name="Container" x="215.44000244140625" y="19.66666603088379" width="10.666666984558105" height="10.666666984558105">
+            <vector id="9:26" name="Icon" x="0" y="0" width="10.666666984558105" height="10.666666984558105" />
+          </frame>
+        </frame>
+      </frame>
+      <frame id="9:27" name="Elegant Inline Proof Ribbon:margin" x="0" y="372" width="896" height="313">
+        <frame id="9:28" name="Elegant Inline Proof Ribbon" x="0" y="64" width="896" height="249">
+          <frame id="9:29" name="Background+Border+Shadow" x="0.0049896240234375" y="33" width="282.6600036621094" height="216">
+            <frame id="9:30" name="Container" x="29" y="29" width="224.66000366210938" height="111">
+              <frame id="9:31" name="Container" x="0" y="0" width="224.66000366210938" height="23">
+                <frame id="9:32" name="Container" x="0" y="3" width="78.66000366210938" height="17">
+                  <text id="9:33" name="Text" x="0" y="0" width="78.66000366210938" height="17" />
+                </frame>
+                <frame id="9:34" name="Overlay+Border" x="150.66000366210938" y="0" width="74" height="23">
+                  <rounded-rectangle id="9:35" name="Background" x="11" y="8.5" width="6" height="6" />
+                  <text id="9:36" name="Online" x="23" y="3" width="40" height="17" />
+                </frame>
+              </frame>
+              <frame id="9:37" name="Paragraph" x="0" y="31" width="224.66000366210938" height="48">
+                <text id="9:38" name="3" x="0" y="8" width="22" height="40" />
+                <text id="9:39" name="Text" x="30" y="29" width="50.40999984741211" height="16" />
+              </frame>
+              <frame id="9:40" name="Container" x="0" y="87" width="224.66000366210938" height="20">
+                <text id="9:41" name="Live Apps in Fleet" x="0" y="0" width="224.66000366210938" height="20" />
+              </frame>
+            </frame>
+            <frame id="9:42" name="Margin" x="29" y="140" width="224.66000366210938" height="47">
+              <frame id="9:43" name="Container" x="0" y="8" width="224.66000366210938" height="39">
+                <text id="9:44" name="Multi-tenant mobile &amp; central dispatch ecosystem in 24/7 production." x="0" y="0" width="224.66000366210938" height="39" />
+              </frame>
+            </frame>
+          </frame>
+          <frame id="9:45" name="Background+Border+Shadow" x="306.66497802734375" y="33" width="282.6700134277344" height="210">
+            <frame id="9:46" name="Container" x="29" y="29" width="224.6699981689453" height="105">
+              <frame id="9:47" name="Container" x="0" y="0" width="224.6699981689453" height="17">
+                <frame id="9:48" name="Container" x="0" y="0" width="64.36000061035156" height="17">
+                  <text id="9:49" name="Text" x="0" y="0" width="64.36000061035156" height="17" />
+                </frame>
+                <frame id="9:50" name="Container" x="211.1699981689453" y="1.75" width="13.5" height="13.5">
+                  <vector id="9:51" name="Icon" x="0" y="0" width="13.5" height="13.5" />
+                </frame>
+              </frame>
+              <frame id="9:52" name="Paragraph" x="0" y="25" width="224.6699981689453" height="48">
+                <text id="9:53" name="200+" x="0" y="8" width="84" height="40" />
+                <text id="9:54" name="Text" x="92" y="29" width="36.02000045776367" height="16" />
+              </frame>
+              <frame id="9:55" name="Container" x="0" y="81" width="224.6699981689453" height="20">
+                <text id="9:56" name="Active Daily Users" x="0" y="0" width="224.6699981689453" height="20" />
+              </frame>
+            </frame>
+            <frame id="9:57" name="Margin" x="29.00000762939453" y="134" width="224.6699981689453" height="47">
+              <frame id="9:58" name="Container" x="0" y="8" width="224.6699981689453" height="39">
+                <text id="9:59" name="Recurring local commerce customers with zero telemetry failures." x="0" y="0" width="224.6699981689453" height="39" />
+              </frame>
+            </frame>
+          </frame>
+          <frame id="9:60" name="Background+Border+Shadow" x="613.3349609375" y="33" width="282.6600036621094" height="210">
+            <frame id="9:61" name="Container" x="29" y="29" width="224.66000366210938" height="105">
+              <frame id="9:62" name="Container" x="0" y="0" width="224.66000366210938" height="17">
+                <frame id="9:63" name="Container" x="0" y="0" width="64.36000061035156" height="17">
+                  <text id="9:64" name="Text" x="0" y="0" width="64.36000061035156" height="17" />
+                </frame>
+                <frame id="9:65" name="Container" x="208.15000915527344" y="0.625" width="16.5" height="15.75">
+                  <vector id="9:66" name="Icon" x="0" y="0" width="16.5" height="15.75" />
+                </frame>
+              </frame>
+              <frame id="9:67" name="Paragraph" x="0" y="25" width="224.66000366210938" height="48">
+                <text id="9:68" name="100%" x="0" y="8" width="84" height="40" />
+                <text id="9:69" name="Text" x="92" y="29" width="50.40999984741211" height="16" />
+              </frame>
+              <frame id="9:70" name="Container" x="0" y="81" width="224.66000366210938" height="20">
+                <text id="9:71" name="Direct Delivery" x="0" y="0" width="224.66000366210938" height="20" />
+              </frame>
+            </frame>
+            <frame id="9:72" name="Margin" x="29" y="134" width="224.66000366210938" height="47">
+              <frame id="9:73" name="Container" x="0" y="8" width="224.66000366210938" height="39">
+                <text id="9:74" name="Architecture, code, and deployment held entirely by one engineer." x="0" y="0" width="224.66000366210938" height="39" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="9:75" name="Section - WHAT I BUILD (CAPABILITIES)" x="128" y="972.5" width="1024" height="797.5">
+      <frame id="9:76" name="Container" x="24" y="81" width="976" height="128">
+        <frame id="9:77" name="Container" x="0" y="0" width="976" height="16">
+          <text id="9:78" name="CAPABILITIES" x="0" y="0" width="976" height="16" />
+        </frame>
+        <frame id="9:79" name="Heading 2" x="0" y="24" width="976" height="40">
+          <text id="9:80" name="What I build for your business" x="0" y="0" width="976" height="40" />
+        </frame>
+        <frame id="9:81" name="Container" x="0" y="72" width="672" height="56">
+          <text id="9:82" name="Text" x="0" y="8" width="643.8400268554688" height="48" />
+        </frame>
+      </frame>
+      <frame id="9:83" name="Container" x="24" y="265" width="976" height="452.5">
+        <frame id="9:84" name="Card 1: Websites that Convert" x="0" y="0" width="309.3299865722656" height="446.8999938964844">
+          <frame id="9:85" name="Container" x="33" y="33" width="243.3300018310547" height="264.3999938964844">
+            <frame id="9:86" name="Container" x="0" y="0" width="243.3300018310547" height="40">
+              <frame id="9:87" name="Overlay+Border" x="0" y="0" width="40" height="40">
+                <frame id="9:88" name="Container" x="11.666666984558105" y="13.333333969116211" width="16.66666603088379" height="13.333333015441895">
+                  <vector id="9:89" name="Icon" x="0" y="0" width="16.66666603088379" height="13.333333015441895" />
+                </frame>
+              </frame>
+              <frame id="9:90" name="Overlay+Border" x="100.33000183105469" y="8.5" width="143" height="23">
+                <text id="9:91" name="LEAD GEN &amp; GROWTH" x="11" y="3" width="121" height="17" />
+              </frame>
+            </frame>
+            <frame id="9:92" name="Heading 3" x="0" y="51.400001525878906" width="243.3300018310547" height="40.599998474121094">
+              <text id="9:93" name="Websites that Convert" x="0" y="12.600000381469727" width="243.3300018310547" height="28" />
+            </frame>
+            <frame id="9:94" name="Container" x="0" y="103.4000015258789" width="243.3300018310547" height="137">
+              <text id="9:95" name="Fast, modern web platforms engineered to turn casual visitors into paying inquiries. Built with instant WhatsApp integrations, custom quote calculators, and zero- maintenance reliability." x="0" y="0" width="243.3300018310547" height="137" />
+            </frame>
+          </frame>
+          <frame id="9:96" name="HorizontalBorder" x="32.99999237060547" y="297.3999938964844" width="243.3300018310547" height="116.5">
+            <frame id="9:97" name="Overlay+Border" x="0" y="21" width="189.61000061035156" height="26.5">
+              <text id="9:98" name="Text" x="9" y="5" width="171.61000061035156" height="17" />
+            </frame>
+            <frame id="9:99" name="Overlay+Border" x="0" y="55.5" width="156.61000061035156" height="26.5">
+              <text id="9:100" name="Text" x="9" y="5" width="138.61000061035156" height="17" />
+            </frame>
+            <frame id="9:101" name="Overlay+Border" x="0" y="90" width="110.41000366210938" height="26.5">
+              <text id="9:102" name="Text" x="9" y="5" width="92.41000366210938" height="17" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="9:103" name="Card 2: Mobile Apps (iOS &amp; Android)" x="333.3299865722656" y="0" width="309.3299865722656" height="452.5">
+          <frame id="9:104" name="Container" x="33" y="33" width="243.3300018310547" height="270">
+            <frame id="9:105" name="Container" x="0" y="0" width="243.3300018310547" height="40">
+              <frame id="9:106" name="Overlay+Border" x="0" y="0" width="40" height="40">
+                <frame id="9:107" name="Container" x="13.75" y="10.833333015441895" width="12.5" height="18.33333396911621">
+                  <vector id="9:108" name="Icon" x="0" y="0" width="12.5" height="18.33333396911621" />
+                </frame>
+              </frame>
+              <frame id="9:109" name="Overlay+Border" x="64.31999969482422" y="8.5" width="179" height="23">
+                <text id="9:110" name="CUSTOM MOBILE PRODUCTS" x="11" y="3" width="157" height="17" />
+              </frame>
+            </frame>
+            <frame id="9:111" name="Heading 3" x="0" y="52" width="243.3300018310547" height="68">
+              <text id="9:112" name="Mobile Apps (iOS &amp; Android)" x="0" y="12" width="243.3300018310547" height="56" />
+            </frame>
+            <frame id="9:113" name="Container" x="0" y="132" width="243.3300018310547" height="114">
+              <text id="9:114" name="Full-featured native and cross- platform apps built for smooth day- to-day operations, real-time GPS tracking, push notifications, and App Store launch." x="0" y="0" width="243.3300018310547" height="114" />
+            </frame>
+          </frame>
+          <frame id="9:115" name="HorizontalBorder" x="32.99999237060547" y="303" width="243.3300018310547" height="116.5">
+            <frame id="9:116" name="Overlay+Border" x="0" y="21" width="103.80999755859375" height="26.5">
+              <text id="9:117" name="Text" x="9" y="5" width="85.80999755859375" height="17" />
+            </frame>
+            <frame id="9:118" name="Overlay+Border" x="0" y="55.5" width="143.41000366210938" height="26.5">
+              <text id="9:119" name="Text" x="9" y="5" width="125.41000366210938" height="17" />
+            </frame>
+            <frame id="9:120" name="Overlay+Border" x="0" y="90" width="189.61000061035156" height="26.5">
+              <text id="9:121" name="Text" x="9" y="5" width="171.61000061035156" height="17" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="9:122" name="Card 3: Internal Systems &amp; Automation" x="666.6599731445312" y="0" width="309.3399963378906" height="452.5">
+          <frame id="9:123" name="Container" x="33" y="33" width="243.33999633789062" height="270">
+            <frame id="9:124" name="Container" x="0" y="0" width="243.33999633789062" height="40">
+              <frame id="9:125" name="Overlay+Border" x="0" y="0" width="40" height="40">
+                <frame id="9:126" name="Container" x="10" y="10.416666984558105" width="20" height="19.16666603088379">
+                  <vector id="9:127" name="Icon" x="0" y="0" width="20" height="19.16666603088379" />
+                </frame>
+              </frame>
+              <frame id="9:128" name="Overlay+Border" x="64.33999633789062" y="8.5" width="179" height="23">
+                <text id="9:129" name="OPERATIONS &amp; WORKFLOWS" x="11" y="3" width="157" height="17" />
+              </frame>
+            </frame>
+            <frame id="9:130" name="Heading 3" x="0" y="52" width="243.33999633789062" height="68">
+              <text id="9:131" name="Internal Systems &amp; Automation" x="0" y="12" width="243.33999633789062" height="56" />
+            </frame>
+            <frame id="9:132" name="Container" x="0" y="132" width="243.33999633789062" height="114">
+              <text id="9:133" name="Bespoke operational tools, custom admin dashboards, and backend automations that save your team hours every day without paying costly recurring SaaS subscriptions." x="0" y="0" width="243.33999633789062" height="114" />
+            </frame>
+          </frame>
+          <frame id="9:134" name="HorizontalBorder" x="33" y="303" width="243.33999633789062" height="116.5">
+            <frame id="9:135" name="Overlay+Border" x="0" y="21" width="169.80999755859375" height="26.5">
+              <text id="9:136" name="Text" x="9" y="5" width="151.80999755859375" height="17" />
+            </frame>
+            <frame id="9:137" name="Overlay+Border" x="0" y="55.5" width="143.41000366210938" height="26.5">
+              <text id="9:138" name="Text" x="9" y="5" width="125.41000366210938" height="17" />
+            </frame>
+            <frame id="9:139" name="Overlay+Border" x="0" y="90" width="130.1999969482422" height="26.5">
+              <text id="9:140" name="Text" x="9" y="5" width="112.19999694824219" height="17" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="9:141" name="Section - FEATURED CASE STUDY: E-PICKUP" x="0" y="1769.75" width="1280" height="1361.9000244140625">
+      <frame id="9:142" name="Container" x="128" y="97" width="1024" height="1167.9000244140625">
+        <frame id="9:143" name="Header" x="24" y="0" width="672" height="233.39999389648438">
+          <frame id="9:144" name="Container" x="0" y="0" width="672" height="16">
+            <rounded-rectangle id="9:145" name="Background" x="0" y="4" width="8" height="8" />
+            <frame id="9:146" name="Container" x="16" y="0" width="327" height="16">
+              <text id="9:147" name="FLAGSHIP PRODUCTION SYSTEM · TIRUPATTUR" x="0" y="0" width="327" height="16" />
+            </frame>
+          </frame>
+          <frame id="9:148" name="Heading 2" x="0" y="23.399999618530273" width="672" height="84.5999984741211">
+            <text id="9:149" name="Built it. Launched it. Still keeping it running." x="0" y="4.599999904632568" width="672" height="80" />
+          </frame>
+          <frame id="9:150" name="Container" x="0" y="115.4000015258789" width="672" height="64.5999984741211">
+            <text id="9:151" name="Team architect and engineer for E-Pickup, an on-demand logistics ecosystem serving Tier-3 India." x="0" y="8.600000381469727" width="672" height="56" />
+          </frame>
+          <frame id="9:152" name="Container" x="0" y="187.39999389648438" width="672" height="46">
+            <text id="9:153" name="Powering daily live routing across 3 mobile &amp; dispatch apps with automated driver settlement and zero downtime." x="0" y="0" width="672" height="46" />
+          </frame>
+        </frame>
+        <frame id="9:154" name="Metric highlights crafted into an elegant editorial cluster" x="24" y="281.3999938964844" width="976" height="157">
+          <frame id="9:155" name="Overlay+Border" x="0" y="0" width="312" height="157">
+            <frame id="9:156" name="Container" x="25" y="25" width="262" height="36">
+              <text id="9:157" name="200+" x="0" y="0" width="262" height="36" />
+            </frame>
+            <frame id="9:158" name="Container" x="25" y="65" width="262" height="20">
+              <text id="9:159" name="Active Customers" x="0" y="0" width="262" height="20" />
+            </frame>
+            <frame id="9:160" name="Container" x="25" y="89" width="262" height="43">
+              <text id="9:161" name="Consistent repeat local orders handled daily with zero data errors." x="0" y="4" width="262" height="39" />
+            </frame>
+          </frame>
+          <frame id="9:162" name="Overlay+Border" x="332" y="0" width="312" height="157">
+            <frame id="9:163" name="Container" x="25" y="25" width="262" height="36">
+              <text id="9:164" name="3" x="0" y="0" width="262" height="36" />
+            </frame>
+            <frame id="9:165" name="Container" x="25" y="65" width="262" height="20">
+              <text id="9:166" name="Live Apps + Dashboard" x="0" y="0" width="262" height="20" />
+            </frame>
+            <frame id="9:167" name="Container" x="25" y="89" width="262" height="43">
+              <text id="9:168" name="Real-time state synchronization across customer, rider, and dispatch command." x="0" y="4" width="262" height="39" />
+            </frame>
+          </frame>
+          <frame id="9:169" name="Overlay+Border" x="664" y="0" width="312" height="157">
+            <frame id="9:170" name="Container" x="25" y="25" width="262" height="16">
+              <text id="9:171" name="NOW BUILDING" x="0" y="0" width="262" height="16" />
+            </frame>
+            <frame id="9:172" name="Container" x="25" y="49" width="262" height="20">
+              <text id="9:173" name="Merchant Marketplace" x="0" y="0" width="262" height="20" />
+            </frame>
+            <frame id="9:174" name="Container" x="25" y="77" width="262" height="39">
+              <text id="9:175" name="Expanding peer-to-peer delivery into an all- in-one local commerce engine." x="0" y="0" width="262" height="39" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="9:176" name="High-craft Product Showcase Presentation" x="24" y="486.3999938964844" width="976" height="403.5">
+          <frame id="9:177" name="Dispatch Console with bespoke framing" x="0" y="8" width="559.3333740234375" height="396">
+            <frame id="9:178" name="Realistic Browser / App Header" x="1" y="1" width="557.3333740234375" height="48">
+              <frame id="9:179" name="Container" x="16" y="15.5" width="245.1999969482422" height="16">
+                <frame id="9:180" name="Container" x="0" y="3" width="42" height="10">
+                  <rounded-rectangle id="9:181" name="Overlay" x="0" y="0" width="10" height="10" />
+                  <rounded-rectangle id="9:182" name="Overlay" x="16" y="0" width="10" height="10" />
+                  <rounded-rectangle id="9:183" name="Overlay" x="32" y="0" width="10" height="10" />
+                </frame>
+                <frame id="9:184" name="Margin" x="50" y="0" width="195.1999969482422" height="16">
+                  <text id="9:185" name="Text" x="8" y="0" width="187.1999969482422" height="16" />
+                </frame>
+              </frame>
+              <frame id="9:186" name="Overlay+Border" x="417.3333740234375" y="12" width="124" height="23">
+                <text id="9:187" name="Telemetry Active" x="9" y="3" width="106" height="17" />
+              </frame>
+            </frame>
+            <frame id="9:188" name="Overlay" x="1" y="49" width="557.3333740234375" height="346">
+              <frame id="9:189" name="Border" x="12" y="12" width="533.3333740234375" height="322">
+                <frame id="9:190" name="AB6AXuAZWnmY-amR225vw7cXTT-8sPe0MIobaR1xoZPRrBnw-LEQM1ejcYWc1eTQQhAZzh9Tuxw4iGeySDqkT8g6HYfdgZgO5fmuuv6U4oOH7WPUtRL5WJC9YgiU00LIomnPu3S7PuyckW2O-G020WBNIaThE1RU1a9aKPJLPNxkk63BRScx2i-fJPQpJx0vDRfp_dS_uoLozHMXroDArnTC-oSojpZGqj6ZH2tzFM5HwQN0ZEoL6CLh7JYF" x="1" y="1" width="531.3333740234375" height="320" />
+                <frame id="9:191" name="Overlay+Border+OverlayBlur" x="13" y="279" width="249.1699981689453" height="30">
+                  <text id="9:192" name="Text" x="13" y="7" width="223.1699981689453" height="16" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="9:193" name="Dual Mobile Handset Frames" x="583.3333129882812" y="8" width="392.66668701171875" height="395.5">
+            <frame id="9:194" name="Customer App" x="0" y="0" width="188.33334350585938" height="395">
+              <frame id="9:195" name="Border" x="13" y="13" width="162.33334350585938" height="325">
+                <frame id="9:196" name="AB6AXuAA2e1KgC46Jy6MJMbJk-l4ih_tTx3QiTYbu-nA1m6xWMrVI3y1mZZReWbWngd82X9Qy9cw4DHNc-v5c6qsxnpGT_EMW8y_34gDTS7qUzjjmzkuAXWXORkDdj0I9wwGMyxtXWPUsiBqPB8Pmkhtl1LIadYIEb4BzqXJmiyZ9aj-ZdaZTAfIm2zUx5C9dwl06QBBkOglX9R0qbqZ_W0pv1gdWjMqIZm-lChV4_B19xpoKeuJxDsTO17N" x="1" y="1" width="160.33334350585938" height="320" />
+              </frame>
+              <frame id="9:197" name="Container" x="13" y="338" width="162.33334350585938" height="44">
+                <frame id="9:198" name="Container" x="4" y="12" width="154.33334350585938" height="16">
+                  <text id="9:199" name="Text" x="35.371673583984375" y="0" width="83.58999633789062" height="16" />
+                </frame>
+                <frame id="9:200" name="Container" x="4" y="27" width="154.33334350585938" height="17">
+                  <text id="9:201" name="Text" x="26.191673278808594" y="0" width="101.94999694824219" height="17" />
+                </frame>
+              </frame>
+              <rounded-rectangle id="9:202" name="Customer App:shadow" x="0" y="0" width="188.3300018310547" height="394.5" />
+            </frame>
+            <frame id="9:203" name="Partner App" x="204.33334350585938" y="0" width="188.33334350585938" height="395">
+              <frame id="9:204" name="Border" x="13" y="13" width="162.33334350585938" height="325">
+                <frame id="9:205" name="AB6AXuAtrmbiVTrX6O7lpvwmPFHaWlRuyTf_gPL3LA_Crj9z14wE2apR01zbBfRWweH3ntcEBylmAoNbo5tNAf742Zn7vXrM03YeAUgskchpuu4g6DkGxHwjsLHZQqhF4sbUN-jNAeqFNXkix4iMynJdAFasy2h68cWNptk4rFg-zCdDtvFAP0oQEd5Co7ZwBPZyrNMqLeyWD20ep72TzUP0pd8aRf_iL8JZ3NVK0LtqwhohreuUP4D9wtFs" x="1" y="1" width="160.33334350585938" height="320" />
+              </frame>
+              <frame id="9:206" name="Container" x="13" y="338" width="162.33334350585938" height="44">
+                <frame id="9:207" name="Container" x="4" y="12" width="154.33334350585938" height="16">
+                  <text id="9:208" name="Text" x="43.19667053222656" y="0" width="67.94000244140625" height="16" />
+                </frame>
+                <frame id="9:209" name="Container" x="4" y="27" width="154.33334350585938" height="17">
+                  <text id="9:210" name="Text" x="27.15167236328125" y="0" width="100.02999877929688" height="17" />
+                </frame>
+              </frame>
+              <rounded-rectangle id="9:211" name="Partner App:shadow" x="0" y="0" width="188.3300018310547" height="394.5" />
+            </frame>
+          </frame>
+        </frame>
+        <frame id="9:212" name="Authentic Testimonial Quote Card" x="24" y="937.9000244140625" width="976" height="230">
+          <frame id="9:213" name="Container" x="37" y="37" width="768" height="156">
+            <frame id="9:214" name="Container" x="0" y="0" width="768" height="84">
+              <text id="9:215" name="“Vaigainathan didn&#39;t just deliver the code; he solved the ground-level edge cases in our town&#39;s routing and has kept our systems running reliably every day since launch.”" x="0" y="0" width="768" height="84" />
+            </frame>
+            <frame id="9:216" name="Container" x="0" y="108" width="768" height="48">
+              <frame id="9:217" name="Background+Border" x="0" y="0" width="48" height="48">
+                <text id="9:218" name="Text" x="14.454999923706055" y="14" width="19.09000015258789" height="20" />
+              </frame>
+              <frame id="9:219" name="Container" x="60" y="0" width="232.6699981689453" height="48">
+                <frame id="9:220" name="Container" x="0" y="0" width="232.6699981689453" height="28">
+                  <text id="9:221" name="Text" x="0" y="0" width="111.94000244140625" height="28" />
+                </frame>
+                <frame id="9:222" name="Container" x="0" y="28" width="232.6699981689453" height="20">
+                  <text id="9:223" name="Text" x="0" y="0" width="232.6699981689453" height="20" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="9:224" name="Section - SELECTED CLIENT WORK" x="128" y="3131.75" width="1024" height="1398">
+      <frame id="9:225" name="Container" x="24" y="96" width="976" height="60">
+        <frame id="9:226" name="Container" x="0" y="0" width="976" height="16">
+          <text id="9:227" name="SELECTED WORK" x="0" y="0" width="976" height="16" />
+        </frame>
+        <frame id="9:228" name="Heading 2" x="0" y="24" width="976" height="36">
+          <text id="9:229" name="Recent Client Partnerships" x="0" y="0" width="976" height="36" />
+        </frame>
+      </frame>
+      <frame id="9:230" name="Container" x="24" y="212" width="976" height="848">
+        <frame id="9:231" name="Project 1: NestaIra Trails" x="0" y="0" width="976" height="404">
+          <frame id="9:232" name="Container" x="1" y="1" width="974" height="402">
+            <frame id="9:233" name="Container" x="0" y="0" width="405.83331298828125" height="402">
+              <frame id="9:234" name="Container" x="40" y="40" width="325.83331298828125" height="298">
+                <frame id="9:235" name="Container" x="0" y="6" width="144.02000427246094" height="16">
+                  <frame id="9:236" name="Container" x="0" y="0" width="144.02000427246094" height="16">
+                    <text id="9:237" name="Text" x="0" y="0" width="144.02000427246094" height="16" />
+                  </frame>
+                </frame>
+                <frame id="9:238" name="Heading 3" x="0" y="34" width="325.83331298828125" height="36">
+                  <text id="9:239" name="NestaIra Trails" x="0" y="0" width="325.83331298828125" height="36" />
+                </frame>
+                <frame id="9:240" name="Container" x="0" y="82" width="325.83331298828125" height="112">
+                  <text id="9:241" name="Adventure expedition booking platform wiring live departures straight to WhatsApp inquiries for seamless booking conversions." x="0" y="4" width="325.83331298828125" height="96" />
+                </frame>
+                <frame id="9:242" name="Embedded Testimonial" x="0" y="206" width="325.83331298828125" height="68">
+                  <frame id="9:243" name="Container" x="17" y="4" width="308.83331298828125" height="40">
+                    <text id="9:244" name="“Transformed our inquiry and conversion rate from day one.”" x="0" y="0" width="308.83331298828125" height="40" />
+                  </frame>
+                  <frame id="9:245" name="Container" x="17" y="48" width="308.83331298828125" height="16">
+                    <rounded-rectangle id="9:246" name="Background" x="0" y="5" width="6" height="6" />
+                    <text id="9:247" name="Vinod — Director, NestaIra Projects" x="12" y="0" width="263" height="16" />
+                  </frame>
+                </frame>
+              </frame>
+              <frame id="9:248" name="Container" x="40" y="338" width="325.83331298828125" height="24">
+                <frame id="9:249" name="Link" x="0" y="6" width="108.29499816894531" height="16">
+                  <frame id="9:250" name="Container" x="0" y="0" width="94.16999816894531" height="16">
+                    <text id="9:251" name="Text" x="0" y="0" width="94.16999816894531" height="16" />
+                  </frame>
+                  <frame id="9:252" name="Container" x="100.16999816894531" y="3.9375" width="8.125" height="8.125">
+                    <vector id="9:253" name="Icon" x="0" y="0" width="8.125" height="8.125" />
+                  </frame>
+                </frame>
+              </frame>
+            </frame>
+            <frame id="9:254" name="Preview Surface" x="405.83331298828125" y="0" width="568.1666259765625" height="402">
+              <frame id="9:255" name="Overlay+Border+Shadow" x="33" y="56" width="503.1666259765625" height="290">
+                <frame id="9:256" name="AB6AXuCZXpR4BzJvNyrss-gfrnv9afEkE2zaOZoMe0SDwPidwvlW2mdeqADatjhbYhPTTRfEDkh0Cz5vAeQqtVQdvIkATmAG_REZ36mNEZWOMdizi3e5YVXI3VWv9cFtMVYMQHMeeHMFRfB5hjOgVVZsksUXzE-7FHw39NGznAvdRWLG_mQHuZ3k71Np1jKDgql-po1eEwcpOIKKeobIm5peZeKXioRjP1YtM6fDWKLGzMtAgPyCUkQVVMXD" x="1" y="1" width="501.1666259765625" height="288" />
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+        <frame id="9:257" name="Project 2: V3 Agritech" x="0" y="468" width="976" height="380">
+          <frame id="9:258" name="Container" x="1" y="1" width="974" height="378">
+            <frame id="9:259" name="Background+VerticalBorder" x="0" y="0" width="568.1666259765625" height="378">
+              <frame id="9:260" name="Overlay+Border+Shadow" x="32" y="44" width="503.1666259765625" height="290">
+                <frame id="9:261" name="AB6AXuASyGqB9JsKNLcmHq0uVUqRiaRHgf3hvcrDNFctHeVDvzIP_tncDbBC0IpKTcj1FNboLCI1QRB3l-B22EYo8aQtDbor889yHwILoiYUkVQdCGRlVZ2yWzfMErNEyeYQD1zgV3nd1rJf-JMdcBjlgm1Vr3VZLHCfoQkBP7ji9yh7LrUYiZBN-4JpxvbdUEuHHFA_QPMTCJfiadsdzgqIKJVmNX58L8wEbAvV2g6JmXNn9CyjfHIhnt5e" x="1" y="1" width="501.1666259765625" height="288" />
+              </frame>
+            </frame>
+            <frame id="9:262" name="Container" x="568.1666259765625" y="0" width="405.83331298828125" height="378">
+              <frame id="9:263" name="Container" x="40" y="40" width="325.83331298828125" height="274">
+                <frame id="9:264" name="Container" x="0" y="6" width="180.02000427246094" height="16">
+                  <frame id="9:265" name="Container" x="0" y="0" width="180.02000427246094" height="16">
+                    <text id="9:266" name="Text" x="0" y="0" width="180.02000427246094" height="16" />
+                  </frame>
+                </frame>
+                <frame id="9:267" name="Heading 3" x="0" y="34" width="325.83331298828125" height="36">
+                  <text id="9:268" name="V3 Agritech" x="0" y="0" width="325.83331298828125" height="36" />
+                </frame>
+                <frame id="9:269" name="Container" x="0" y="82" width="325.83331298828125" height="88">
+                  <text id="9:270" name="Machinery catalogue connecting rural farmers directly with regional sales reps in one tap. Built for low-bandwidth clarity." x="0" y="4" width="325.83331298828125" height="72" />
+                </frame>
+                <frame id="9:271" name="Embedded Testimonial" x="0" y="182" width="325.83331298828125" height="68">
+                  <frame id="9:272" name="Container" x="17" y="4" width="308.83331298828125" height="40">
+                    <text id="9:273" name="“Clear, fast, and exactly what our rural agribusiness buyers needed.”" x="0" y="0" width="308.83331298828125" height="40" />
+                  </frame>
+                  <frame id="9:274" name="Container" x="17" y="48" width="308.83331298828125" height="16">
+                    <rounded-rectangle id="9:275" name="Background" x="0" y="5" width="6" height="6" />
+                    <text id="9:276" name="Vinayak — Founder, V3 Agritech" x="12" y="0" width="216" height="16" />
+                  </frame>
+                </frame>
+              </frame>
+              <frame id="9:277" name="Container" x="40" y="314" width="325.83331298828125" height="24">
+                <frame id="9:278" name="Link" x="0" y="6" width="108.29499816894531" height="16">
+                  <frame id="9:279" name="Container" x="0" y="0" width="94.16999816894531" height="16">
+                    <text id="9:280" name="Text" x="0" y="0" width="94.16999816894531" height="16" />
+                  </frame>
+                  <frame id="9:281" name="Container" x="100.16999816894531" y="3.9375" width="8.125" height="8.125">
+                    <vector id="9:282" name="Icon" x="0" y="0" width="8.125" height="8.125" />
+                  </frame>
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="9:283" name="Understated Archive List (Human, not robot-indexed)" x="24" y="1116" width="976" height="186">
+        <frame id="9:284" name="Heading 4" x="0" y="41" width="976" height="16">
+          <text id="9:285" name="ADDITIONAL SELECTED DELIVERIES" x="0" y="0" width="976" height="16" />
+        </frame>
+        <frame id="9:286" name="Container" x="0" y="81" width="976" height="105">
+          <frame id="9:287" name="Container" x="0" y="0" width="976" height="52">
+            <frame id="9:288" name="Paragraph" x="0" y="16" width="411.4200134277344" height="20">
+              <text id="9:289" name="Text" x="0" y="0" width="147.61000061035156" height="20" />
+              <text id="9:290" name="Text" x="163.61000061035156" y="3" width="247.80999755859375" height="16" />
+            </frame>
+            <frame id="9:291" name="Container" x="805.4166259765625" y="18" width="170.58334350585938" height="16">
+              <frame id="9:292" name="Container" x="0" y="0" width="115.47000122070312" height="16">
+                <text id="9:293" name="Text" x="0" y="0" width="115.47000122070312" height="16" />
+              </frame>
+              <frame id="9:294" name="Link" x="131.47000122070312" y="0" width="39.11333465576172" height="16">
+                <frame id="9:295" name="Container" x="0" y="0" width="27.530000686645508" height="16">
+                  <text id="9:296" name="Text" x="0" y="0" width="27.530000686645508" height="16" />
+                </frame>
+                <frame id="9:297" name="Container" x="31.530000686645508" y="4.2083330154418945" width="7.583333492279053" height="7.583333492279053">
+                  <vector id="9:298" name="Icon" x="0" y="0" width="7.583333492279053" height="7.583333492279053" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+          <frame id="9:299" name="HorizontalBorder" x="0" y="52" width="976" height="53">
+            <frame id="9:300" name="Paragraph" x="0" y="17" width="429.28997802734375" height="20">
+              <text id="9:301" name="Text" x="0" y="0" width="122.2699966430664" height="20" />
+              <text id="9:302" name="Text" x="138.26998901367188" y="3" width="291.0199890136719" height="16" />
+            </frame>
+            <frame id="9:303" name="Container" x="828.1666259765625" y="19" width="147.83334350585938" height="16">
+              <frame id="9:304" name="Container" x="0" y="0" width="92.72000122070312" height="16">
+                <text id="9:305" name="Text" x="0" y="0" width="92.72000122070312" height="16" />
+              </frame>
+              <frame id="9:306" name="Link" x="108.72000122070312" y="0" width="39.11333465576172" height="16">
+                <frame id="9:307" name="Container" x="0" y="0" width="27.530000686645508" height="16">
+                  <text id="9:308" name="Text" x="0" y="0" width="27.530000686645508" height="16" />
+                </frame>
+                <frame id="9:309" name="Container" x="31.530000686645508" y="4.2083330154418945" width="7.583333492279053" height="7.583333492279053">
+                  <vector id="9:310" name="Icon" x="0" y="0" width="7.583333492279053" height="7.583333492279053" />
+                </frame>
+              </frame>
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="9:311" name="Section - PROCESS (HOW I WORK)" x="0" y="4529.75" width="1280" height="498">
+      <frame id="9:312" name="Container" x="128" y="97" width="1024" height="304">
+        <frame id="9:313" name="Container" x="24" y="0" width="672" height="120">
+          <frame id="9:314" name="Container" x="0" y="0" width="672" height="16">
+            <text id="9:315" name="PROCESS" x="0" y="0" width="672" height="16" />
+          </frame>
+          <frame id="9:316" name="Heading 2" x="0" y="24" width="672" height="36">
+            <text id="9:317" name="Predictable execution, zero black boxes." x="0" y="0" width="672" height="36" />
+          </frame>
+          <frame id="9:318" name="Container" x="0" y="68" width="672" height="52">
+            <text id="9:319" name="No endless meetings or vanishing acts. A clean, structured roadmap from day one to launch." x="0" y="4" width="672" height="48" />
+          </frame>
+        </frame>
+        <frame id="9:320" name="Connected Human Timeline / Roadmap" x="24" y="176" width="976" height="128">
+          <frame id="9:321" name="Container" x="0" y="8" width="220" height="120">
+            <frame id="9:322" name="Margin" x="0" y="0" width="220" height="28">
+              <frame id="9:323" name="Container" x="0" y="0" width="220" height="16">
+                <text id="9:324" name="01" x="0" y="0" width="220" height="16" />
+              </frame>
+            </frame>
+            <frame id="9:325" name="Heading 3:margin" x="0" y="28" width="220" height="32">
+              <frame id="9:326" name="Heading 3" x="0" y="0" width="220" height="24">
+                <text id="9:327" name="Plan" x="0" y="0" width="220" height="24" />
+              </frame>
+            </frame>
+            <frame id="9:328" name="Container" x="0" y="60" width="239" height="60">
+              <text id="9:329" name="Fixed scope, architecture specs, and milestones before code starts." x="0" y="0" width="239" height="60" />
+            </frame>
+          </frame>
+          <frame id="9:330" name="Container" x="252" y="8" width="220" height="120">
+            <frame id="9:331" name="Margin" x="0" y="0" width="220" height="28">
+              <frame id="9:332" name="Container" x="0" y="0" width="220" height="16">
+                <text id="9:333" name="02" x="0" y="0" width="220" height="16" />
+              </frame>
+            </frame>
+            <frame id="9:334" name="Heading 3:margin" x="0" y="28" width="220" height="32">
+              <frame id="9:335" name="Heading 3" x="0" y="0" width="220" height="24">
+                <text id="9:336" name="Design" x="0" y="0" width="220" height="24" />
+              </frame>
+            </frame>
+            <frame id="9:337" name="Container" x="0" y="60" width="220" height="60">
+              <text id="9:338" name="Interactive Figma flows tested and confirmed before writing logic." x="0" y="0" width="239" height="60" />
+            </frame>
+          </frame>
+          <frame id="9:339" name="Container" x="504" y="8" width="220" height="120">
+            <frame id="9:340" name="Margin" x="0" y="0" width="220" height="28">
+              <frame id="9:341" name="Container" x="0" y="0" width="220" height="16">
+                <text id="9:342" name="03" x="0" y="0" width="220" height="16" />
+              </frame>
+            </frame>
+            <frame id="9:343" name="Heading 3:margin" x="0" y="28" width="220" height="32">
+              <frame id="9:344" name="Heading 3" x="0" y="0" width="220" height="24">
+                <text id="9:345" name="Build" x="0" y="0" width="220" height="24" />
+              </frame>
+            </frame>
+            <frame id="9:346" name="Container" x="0" y="60" width="239" height="40">
+              <text id="9:347" name="Weekly staging builds with direct access to inspect progress." x="0" y="0" width="239" height="40" />
+            </frame>
+          </frame>
+          <frame id="9:348" name="Container" x="756" y="8" width="220" height="120">
+            <frame id="9:349" name="Margin" x="0" y="0" width="220" height="28">
+              <frame id="9:350" name="Container" x="0" y="0" width="220" height="16">
+                <text id="9:351" name="04" x="0" y="0" width="220" height="16" />
+              </frame>
+            </frame>
+            <frame id="9:352" name="Heading 3:margin" x="0" y="28" width="220" height="32">
+              <frame id="9:353" name="Heading 3" x="0" y="0" width="220" height="24">
+                <text id="9:354" name="Launch" x="0" y="0" width="220" height="24" />
+              </frame>
+            </frame>
+            <frame id="9:355" name="Container" x="0" y="60" width="220" height="60">
+              <text id="9:356" name="Smooth production deployment, clean documentation, and post- launch support." x="0" y="0" width="239" height="60" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="9:362" name="Section - ABOUT &amp; PHILOSOPHY" x="128" y="5145.75" width="1024" height="579">
+      <frame id="9:363" name="Container" x="24" y="96" width="768" height="386">
+        <frame id="9:364" name="Container" x="0" y="0" width="768" height="16">
+          <text id="9:365" name="ABOUT" x="0" y="0" width="768" height="16" />
+        </frame>
+        <frame id="9:366" name="Heading 2" x="0" y="32" width="768" height="36">
+          <text id="9:367" name="System Engineer &amp; Builder" x="0" y="0" width="768" height="36" />
+        </frame>
+        <frame id="9:368" name="Container" x="0" y="84" width="768" height="80">
+          <text id="9:369" name="“No account managers or handoffs. You work directly with the engineer building your product.”" x="0" y="16" width="768" height="64" />
+        </frame>
+        <frame id="9:370" name="Container" x="0" y="180" width="768" height="156">
+          <frame id="9:371" name="Container" x="0" y="16" width="768" height="48">
+            <text id="9:372" name="Clients partner with me for rapid communication, guaranteed delivery timelines, and direct ownership of their full technical stack." x="0" y="0" width="768" height="48" />
+          </frame>
+          <frame id="9:373" name="Container" x="0" y="84" width="768" height="48">
+            <text id="9:374" name="From initial system architecture to live production support, every problem is solved immediately without corporate runaround." x="0" y="0" width="768" height="48" />
+          </frame>
+        </frame>
+        <frame id="9:375" name="Background+Border" x="0" y="352" width="416.8900146484375" height="34">
+          <rounded-rectangle id="9:376" name="Background" x="17" y="13" width="8" height="8" />
+          <frame id="9:377" name="Container" x="35" y="9" width="364.8900146484375" height="16">
+            <text id="9:378" name="Text" x="0" y="0" width="364.8900146484375" height="16" />
+          </frame>
+        </frame>
+      </frame>
+    </frame>
+    <frame id="9:379" name="Section - CONTACT &amp; CTA" x="152" y="5820.75" width="976" height="415">
+      <frame id="9:380" name="Container" x="57" y="57" width="862" height="168">
+        <frame id="9:381" name="Container" x="0" y="0" width="486.1665954589844" height="168">
+          <frame id="9:382" name="Heading 2" x="0" y="0" width="486.1665954589844" height="80">
+            <text id="9:383" name="Have a project in mind? Tell me what you need." x="0" y="0" width="486.1665954589844" height="80" />
+          </frame>
+          <frame id="9:384" name="Container" x="0" y="96" width="486.1665954589844" height="72">
+            <text id="9:385" name="Every project is scoped on its own terms — tell me what you&#39;re building and I&#39;ll come back with an actionable plan, timeline, and exact commercial quote." x="0" y="0" width="486.1665954589844" height="72" />
+          </frame>
+        </frame>
+        <frame id="9:386" name="Direct Human Action Triggers" x="526.1666870117188" y="14" width="335.83331298828125" height="140">
+          <frame id="9:387" name="Link - WhatsApp Action" x="0" y="0" width="335.83331298828125" height="52">
+            <rounded-rectangle id="9:388" name="Link - WhatsApp Action:shadow" x="0" y="0" width="335.8399963378906" height="52" />
+            <frame id="9:389" name="Container" x="20" y="16" width="181.47666931152344" height="20">
+              <frame id="9:390" name="Container" x="0" y="1.6666669845581055" width="16.66666603088379" height="16.66666603088379">
+                <vector id="9:391" name="Icon" x="0" y="0" width="16.66666603088379" height="16.66666603088379" />
+              </frame>
+              <frame id="9:392" name="Container" x="26.66666603088379" y="0" width="154.80999755859375" height="20">
+                <text id="9:393" name="Text" x="0" y="0" width="154.80999755859375" height="20" />
+              </frame>
+            </frame>
+            <frame id="9:394" name="Container" x="303.83331298828125" y="20" width="12" height="12">
+              <vector id="9:395" name="Icon" x="0" y="0" width="12" height="12" />
+            </frame>
+          </frame>
+          <frame id="9:396" name="Link - Email Action" x="0" y="66" width="335.83331298828125" height="74">
+            <frame id="9:397" name="Container" x="21" y="17" width="117.69666290283203" height="40">
+              <frame id="9:398" name="Container" x="0" y="13.333333969116211" width="16.66666603088379" height="13.333333015441895">
+                <vector id="9:399" name="Icon" x="0" y="0" width="16.66666603088379" height="13.333333015441895" />
+              </frame>
+              <frame id="9:400" name="Container" x="26.66666603088379" y="0" width="91.02999877929688" height="40">
+                <text id="9:401" name="Text" x="0" y="0" width="53.720001220703125" height="40" />
+              </frame>
+            </frame>
+            <frame id="9:402" name="Container" x="142.0233154296875" y="29" width="172.80999755859375" height="16">
+              <text id="9:403" name="Text" x="0" y="0" width="172.80999755859375" height="16" />
+            </frame>
+          </frame>
+        </frame>
+      </frame>
+      <frame id="9:404" name="Reassurance Footer row" x="57" y="273" width="862" height="85">
+        <frame id="9:405" name="Container" x="0" y="33" width="271.3299865722656" height="52">
+          <frame id="9:406" name="Container" x="0" y="0" width="271.3299865722656" height="16">
+            <text id="9:407" name="Direct Access" x="0" y="0" width="271.3299865722656" height="16" />
+          </frame>
+          <text id="9:408" name="Text" x="0" y="19.5" width="259.1600036621094" height="16" />
+        </frame>
+        <frame id="9:409" name="Container" x="295.3299865722656" y="33" width="271.3299865722656" height="52">
+          <frame id="9:410" name="Container" x="0" y="0" width="271.3299865722656" height="16">
+            <text id="9:411" name="Fixed Timelines" x="0" y="0" width="271.3299865722656" height="16" />
+          </frame>
+          <text id="9:412" name="Text" x="0" y="19.5" width="251.80999755859375" height="16" />
+        </frame>
+        <frame id="9:413" name="Container" x="590.6599731445312" y="33" width="271.3399963378906" height="51.5">
+          <frame id="9:414" name="Container" x="0" y="0" width="271.3399963378906" height="16">
+            <text id="9:415" name="Support Included" x="0" y="0" width="271.3399963378906" height="16" />
+          </frame>
+          <text id="9:416" name="Text" x="0" y="19.5" width="233.6199951171875" height="32" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="9:417" name="Footer - MINIMALIST HUMAN FOOTER" x="0" y="6331.75" width="1280" height="155">
+    <frame id="9:418" name="Container" x="128" y="57" width="1024" height="42">
+      <frame id="9:419" name="Container" x="24" y="0" width="408.5899963378906" height="42">
+        <frame id="9:420" name="Container" x="0" y="0" width="408.5899963378906" height="20">
+          <text id="9:421" name="Text" x="0" y="0" width="87.52999877929688" height="20" />
+        </frame>
+        <frame id="9:422" name="Container" x="0" y="26" width="408.5899963378906" height="16">
+          <text id="9:423" name="Text" x="0" y="0" width="408.5899963378906" height="16" />
+        </frame>
+      </frame>
+      <frame id="9:424" name="Links" x="548.72998046875" y="13" width="451.2699890136719" height="16">
+        <frame id="9:425" name="Link" x="0" y="0" width="41.220001220703125" height="16">
+          <text id="9:426" name="Text" x="0" y="0" width="41.220001220703125" height="16" />
+        </frame>
+        <frame id="9:427" name="Link" x="65.22000122070312" y="0" width="48.33000183105469" height="16">
+          <text id="9:428" name="Text" x="0" y="0" width="48.33000183105469" height="16" />
+        </frame>
+        <frame id="9:429" name="Link" x="137.5500030517578" y="0" width="30.829999923706055" height="16">
+          <text id="9:430" name="Text" x="0" y="0" width="30.829999923706055" height="16" />
+        </frame>
+        <frame id="9:431" name="Container" x="192.3800048828125" y="0" width="6.940000057220459" height="16">
+          <text id="9:432" name="Text" x="0" y="0" width="6.940000057220459" height="16" />
+        </frame>
+        <frame id="9:433" name="Container" x="223.32000732421875" y="0" width="227.9499969482422" height="16">
+          <text id="9:434" name="Text" x="0" y="0" width="227.9499969482422" height="16" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+  <frame id="9:435" name="Header - BESPOKE HEADER" x="0" y="0" width="1280" height="65">
+    <frame id="9:436" name="Container" x="128" y="0" width="1024" height="64">
+      <frame id="9:437" name="Link" x="24" y="22" width="104.41000366210938" height="20">
+        <rounded-rectangle id="9:438" name="Background+Shadow" x="0" y="5" width="10" height="10" />
+        <frame id="9:439" name="Container" x="22" y="0" width="82.41000366210938" height="20">
+          <text id="9:440" name="Text" x="0" y="0" width="82.41000366210938" height="20" />
+        </frame>
+      </frame>
+      <frame id="9:445" name="Nav" x="368.8983154296875" y="24" width="263.6300048828125" height="16">
+        <frame id="9:446" name="Link" x="0" y="0" width="29.829999923706055" height="16">
+          <text id="9:447" name="Text" x="0" y="0" width="29.829999923706055" height="16" />
+        </frame>
+        <frame id="9:448" name="Link" x="57.83000183105469" y="0" width="68.12999725341797" height="16">
+          <text id="9:449" name="Text" x="0" y="0" width="68.12999725341797" height="16" />
+        </frame>
+        <frame id="9:450" name="Link" x="153.9600067138672" y="0" width="46.439998626708984" height="16">
+          <text id="9:451" name="Text" x="0" y="0" width="46.439998626708984" height="16" />
+        </frame>
+        <frame id="9:452" name="Link" x="228.39999389648438" y="0" width="35.22999954223633" height="16">
+          <text id="9:453" name="Text" x="0" y="0" width="35.22999954223633" height="16" />
+        </frame>
+      </frame>
+      <frame id="9:454" name="Link" x="873.0166625976562" y="17" width="126.98333740234375" height="30">
+        <frame id="9:455" name="Container" x="15" y="7" width="81.66000366210938" height="16">
+          <text id="9:456" name="Text" x="0" y="0" width="81.66000366210938" height="16" />
+        </frame>
+        <frame id="9:457" name="Container" x="102.6500015258789" y="10.333333969116211" width="9.333333015441895" height="9.333333015441895">
+          <vector id="9:458" name="Icon" x="0" y="0" width="9.333333015441895" height="9.333333015441895" />
+        </frame>
+      </frame>
+    </frame>
+  </frame>
+</frame>
+
+IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design.
