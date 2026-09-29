@@ -13,6 +13,16 @@ export function Header() {
   const close = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
+    const media = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => {
+      if (media.matches) close();
+    };
+
+    media.addEventListener("change", onChange);
+    return () => media.removeEventListener("change", onChange);
+  }, [close]);
+
+  useEffect(() => {
     if (!open) return;
 
     const onKey = (event: KeyboardEvent) => {
@@ -58,13 +68,13 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-border bg-header-bg px-4 backdrop-blur-header md:px-8 xl:px-32">
-        <div className="mx-auto flex h-header max-w-content items-center justify-between xl:px-6">
+        <div className="mx-auto flex h-header max-w-content items-center justify-between lg:px-6">
           <a href="#top" className="flex items-center gap-3" onClick={close}>
             <span className="size-2.5 rounded-pill bg-accent-gold shadow-logo-glow" aria-hidden="true" />
             <span className="text-logo text-text">{site.name}</span>
           </a>
 
-          <nav aria-label="Primary" className="hidden xl:block">
+          <nav aria-label="Primary" className="hidden lg:block">
             <ul className="flex items-center gap-7">
               {site.nav.map((link) => (
                 <li key={link.href}>
@@ -78,7 +88,7 @@ export function Header() {
 
           <a
             href={site.headerCta.href}
-            className="hidden items-center gap-1.5 rounded-pill border border-border-strong bg-surface-2 px-3.5 py-1.5 text-nav font-medium text-text-soft xl:flex"
+            className="hidden items-center gap-1.5 rounded-pill border border-border-strong bg-surface-2 px-3.5 py-1.5 text-nav font-medium text-text-soft lg:flex"
           >
             {site.headerCta.label}
             <ArrowRight size={9.333} className="text-text-muted" />
@@ -87,7 +97,7 @@ export function Header() {
           <button
             ref={toggleRef}
             type="button"
-            className="flex size-tap items-center justify-center text-text xl:hidden"
+            className="flex size-tap items-center justify-center text-text lg:hidden"
             aria-expanded={open}
             aria-controls={menuId}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -102,7 +112,7 @@ export function Header() {
         <div
           id={menuId}
           ref={panelRef}
-          className="fixed top-header right-0 bottom-0 left-0 z-40 bg-bg xl:hidden"
+          className="fixed top-header right-0 bottom-0 left-0 z-40 bg-bg lg:hidden"
         >
           <nav aria-label="Mobile" className="mx-auto flex max-w-content flex-col gap-8 px-6 pt-8">
             <ul className="flex flex-col">
