@@ -35,7 +35,11 @@ export function ProjectBlock({ project, testimonial, linkLabel, previewFirst = f
               </li>
             ))}
           </ul>
-          {testimonial && <TestimonialCard testimonial={testimonial} variant="embedded" />}
+          {testimonial && (
+            <div className="pt-3">
+              <TestimonialCard testimonial={testimonial} variant="embedded" />
+            </div>
+          )}
         </div>
 
         {project.liveUrl && (
