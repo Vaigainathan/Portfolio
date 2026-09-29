@@ -4,7 +4,7 @@ export type ProjectImage = {
   src: string;
   alt: string;
   caption?: string;
-  frame: "browser" | "phone";
+  frame: "browser" | "phone" | "screen";
   chromeLabel?: string;
 };
 
@@ -19,10 +19,12 @@ export type Project = {
   slug: string;
   name: string;
   category: string;
+  /** Stored for reference; not rendered. */
+  client?: string;
   summary: string;
   role: string;
   stack: string[];
-  built: string[];
+  built?: string[];
   liveUrl?: string;
   images: ProjectImage[];
   testimonial?: Testimonial["id"];
@@ -58,7 +60,7 @@ export const projects: Project[] = [
         kind: "figure",
         value: "3",
         title: "Live Apps + Dashboard",
-        body: "Customer, delivery partner and shop apps, plus the admin dashboard, in daily production.",
+        body: "Customer, delivery partner and admin apps running in daily production, with the shop app in testing.",
       },
       {
         kind: "status",
@@ -69,7 +71,7 @@ export const projects: Project[] = [
     ],
     role: "Full-stack development — architecture to launch, plus monthly maintenance",
     stack: ["React Native", "Expo", "Node.js", "Firebase"],
-    built: ["Customer app", "Delivery partner app", "Shop app", "Admin dashboard"],
+    built: ["Customer app", "Delivery partner app", "Admin dashboard", "Shop app (in testing)"],
     images: [
       {
         frame: "browser",
@@ -89,15 +91,70 @@ export const projects: Project[] = [
         alt: "Delivery partner app home screen with today's deliveries and earnings, an online toggle, wallet balance and work slots",
         caption: "Delivery partner app — job routing",
       },
-      {
-        frame: "phone",
-        src: "/images/epickup-shop.jpg",
-        alt: "Shop app dashboard showing the store open for orders, today's earnings, total orders and live order statuses",
-        caption: "Shop app — store orders",
-      },
     ],
     testimonial: "bhoopathy-epickup",
   },
+  {
+    slug: "nestaira-trails",
+    name: "NestaIra Trails",
+    category: "Travel & Hospitality",
+    client: "NestaIra Projects, Bengaluru",
+    summary:
+      "A holiday destination site with live departure dates, and enquiries routed straight to WhatsApp and email — so no booking request sits unanswered.",
+    role: "Design & development",
+    stack: ["WordPress", "Figma", "WhatsApp API"],
+    liveUrl: "https://nestairatrails.com/",
+    images: [
+      // Pending replacement: this file will be recaptured to show the departure dates; update the alt text with it.
+      {
+        frame: "screen",
+        src: "/images/nestaira-trails.png",
+        alt: "NestaIra Trails homepage with a photo banner of two pilgrims, trip categories in the navigation and an Upcoming Trips heading",
+      },
+    ],
+    testimonial: "vinod-nestaira",
+  },
+  {
+    slug: "v3-agritech",
+    name: "V3 Agritech",
+    category: "Agri-Commerce",
+    summary:
+      "A product catalogue for an agri-tech business, with WhatsApp enquiries wired in so buyers can ask about a product the moment they find it.",
+    role: "Design & development",
+    stack: ["WordPress", "Figma", "WhatsApp API"],
+    liveUrl: "https://vthreeagritech.com/",
+    images: [
+      {
+        frame: "screen",
+        src: "/images/v3-agritech.png",
+        alt: "V3 Agritech homepage with a banner of fertiliser and crop-nutrient product packs above an About section",
+      },
+    ],
+    testimonial: "vinayak-v3",
+  },
 ];
 
-export const archive: ArchiveItem[] = [];
+export const clientWorkSlugs: Project["slug"][] = ["nestaira-trails", "v3-agritech"];
+
+export const clientWork = {
+  label: "Selected work",
+  heading: "Recent client partnerships",
+  linkLabel: "Visit live website",
+  archiveLabel: "Also shipped",
+  archiveLinkLabel: "View",
+};
+
+/** Delivered through a partner studio: never label these as direct clients. Role tags only. */
+export const archive: ArchiveItem[] = [
+  {
+    name: "Radcam Technologies",
+    description: "Industrial machinery catalogue and spec index",
+    tags: ["Design & WordPress"],
+    liveUrl: "https://radcamtechnologies.com/",
+  },
+  {
+    name: "Deepanjan Cables",
+    description: "Cable manufacturer, product range and quote flow",
+    tags: ["Design & Framer"],
+  },
+];

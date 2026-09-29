@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/Card";
 import type { Testimonial } from "@/content/testimonials";
 
-type TestimonialCardProps = { testimonial: Testimonial };
+type TestimonialCardProps = { testimonial: Testimonial; variant?: "card" | "embedded" };
 
 function initials(name: string) {
   return name
@@ -11,8 +11,22 @@ function initials(name: string) {
     .toUpperCase();
 }
 
-export function TestimonialCard({ testimonial }: TestimonialCardProps) {
+export function TestimonialCard({ testimonial, variant = "card" }: TestimonialCardProps) {
   if (!testimonial.approved) return null;
+
+  if (variant === "embedded") {
+    return (
+      <figure className="flex flex-col gap-1 border-l border-border-quote py-1 pl-4">
+        <blockquote className="font-quote text-body-sm text-text-soft italic">
+          <p>“{testimonial.quote}”</p>
+        </blockquote>
+        <figcaption className="flex items-center gap-1.5 font-mono text-attribution text-accent-gold">
+          <span className="size-1.5 shrink-0 rounded-pill bg-accent-gold" aria-hidden="true" />
+          {testimonial.name} — {testimonial.title}
+        </figcaption>
+      </figure>
+    );
+  }
 
   return (
     <Card as="div" tone="quote" className="overflow-hidden p-9">

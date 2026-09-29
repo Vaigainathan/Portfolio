@@ -15,6 +15,8 @@
   --surface-quote: #13151a;
   --band: linear-gradient(to bottom, var(--surface-to), var(--bg));
   --avatar-bg: #27272a;
+  --surface-project: #121417;
+  --surface-preview: #0b0c0e;
 
   /* Device frames around product screenshots */
   --frame: #111317;
@@ -29,10 +31,12 @@
     rgba(61, 214, 140, 0) 70%
   );
 
-  /* Borders — three opacities are deliberate depth layering */
+  /* Borders — these opacities are deliberate depth layering */
   --border: rgba(255, 255, 255, 0.06);
+  --border-project: rgba(255, 255, 255, 0.07);
   --border-card: rgba(255, 255, 255, 0.08);
   --border-strong: rgba(255, 255, 255, 0.1);
+  --border-quote: #3f3f46;
 
   /* Text — close greys are deliberate depth layering */
   --text-strong: #ffffff;
@@ -51,7 +55,7 @@
   );
   --button-primary-bg: #f4f4f5;
 
-  /* Gold: section labels, metric numbers, status indicators and capability icons */
+  /* Gold: section labels, metric numbers, status indicators, capability icons and links */
   --accent-gold: #c8a96b;
   /* Teal: glow effects and tinted pill backgrounds only */
   --accent-teal: #34d399;
@@ -83,6 +87,8 @@
   --color-surface-stat: var(--surface-stat);
   --color-surface-quote: var(--surface-quote);
   --color-avatar-bg: var(--avatar-bg);
+  --color-surface-project: var(--surface-project);
+  --color-surface-preview: var(--surface-preview);
 
   --color-frame: var(--frame);
   --color-frame-chrome: var(--frame-chrome);
@@ -93,6 +99,8 @@
   --color-border: var(--border);
   --color-border-card: var(--border-card);
   --color-border-strong: var(--border-strong);
+  --color-border-project: var(--border-project);
+  --color-border-quote: var(--border-quote);
 
   --color-text-strong: var(--text-strong);
   --color-text: var(--text);
@@ -227,12 +235,23 @@
   --text-caption: 12px;
   --text-caption--line-height: 16px;
 
+  /* Weight set per use: 600 section heading, 700 project names */
+  --text-heading-sm: 30px;
+  --text-heading-sm--line-height: 36px;
+  --text-heading-sm--letter-spacing: -0.75px;
+
+  --text-attribution: 12px;
+  --text-attribution--line-height: 16px;
+  --text-attribution--letter-spacing: 0.3px;
+  --text-attribution--font-weight: 500;
+
   --radius-pill: 9999px;
   --radius-card: 16px;
   --radius-action: 12px;
   --radius-tile: 12px;
   --radius-tag: 4px;
   --radius-caption: 8px;
+  --radius-panel: 24px;
 
   --shadow-card: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
     0px 8px 10px -6px rgba(0, 0, 0, 0.1);

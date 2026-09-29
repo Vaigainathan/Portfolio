@@ -16,4 +16,20 @@ export const testimonials: Testimonial[] = [
     title: "E-Pickup",
     approved: false,
   },
+  {
+    id: "vinod-nestaira",
+    quote:
+      "Our destinations and departure dates are finally presented properly, and every enquiry now reaches us on WhatsApp straight away. Delivered on time and exactly as discussed.",
+    name: "Vinod",
+    title: "Director, NestaIra Projects",
+    approved: false,
+  },
+  {
+    id: "vinayak-v3",
+    quote:
+      "Clear, fast, and exactly what our buyers needed. Customers can reach us directly from any product page now.",
+    name: "Vinayak",
+    title: "Founder, V3 Agritech",
+    approved: false,
+  },
 ];

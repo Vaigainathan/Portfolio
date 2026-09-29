@@ -1,6 +1,5 @@
 // TODO before launch: each anchor below needs a section with the matching id,
 // or it becomes a dead link.
-//   #work          — Selected client work
 //   #process       — Process
 //   #about         — About
 //   #contact       — Contact CTA
@@ -65,7 +64,7 @@ export const site: Site = {
         metric: "3",
         unit: "apps",
         title: "Live Apps + Dashboard",
-        body: "Customer, delivery partner and shop apps, plus the admin dashboard, in daily production.",
+        body: "Customer, delivery partner and admin apps running in daily production.",
       },
       {
         label: "User base",

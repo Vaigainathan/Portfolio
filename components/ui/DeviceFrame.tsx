@@ -2,10 +2,10 @@ import Image from "next/image";
 import { Card } from "@/components/ui/Card";
 
 type DeviceFrameProps = {
-  variant: "browser" | "phone";
+  variant: "browser" | "phone" | "screen";
   src: string;
   alt: string;
-  caption: string;
+  caption?: string;
   chromeLabel?: string;
 };
 
@@ -22,6 +22,14 @@ function Screen({ src, alt, sizes, aspect }: ScreenProps) {
 }
 
 export function DeviceFrame({ variant, src, alt, caption, chromeLabel }: DeviceFrameProps) {
+  if (variant === "screen") {
+    return (
+      <figure className="w-full overflow-hidden rounded-card border border-border-card shadow-card">
+        <Screen src={src} alt={alt} sizes="505px" aspect="aspect-desktop" />
+      </figure>
+    );
+  }
+
   if (variant === "browser") {
     return (
       <Card as="figure" tone="frame" className="overflow-hidden shadow-frame">
@@ -37,27 +45,31 @@ export function DeviceFrame({ variant, src, alt, caption, chromeLabel }: DeviceF
         </div>
         <div className="bg-frame-well p-3">
           <div className="relative overflow-hidden rounded-tile border border-border-card">
-            <Screen src={src} alt={alt} sizes="450px" aspect="aspect-desktop" />
-            <figcaption className="absolute bottom-3 left-3 rounded-caption border border-border-strong bg-caption-bg px-3 py-1.5 text-caption font-medium text-text backdrop-blur-caption">
-              {caption}
-            </figcaption>
+            <Screen src={src} alt={alt} sizes="535px" aspect="aspect-desktop" />
+            {caption && (
+              <figcaption className="absolute bottom-3 left-3 rounded-caption border border-border-strong bg-caption-bg px-3 py-1.5 text-caption font-medium text-text backdrop-blur-caption">
+                {caption}
+              </figcaption>
+            )}
           </div>
         </div>
       </Card>
     );
   }
 
-  const [title, subline] = caption.split(CAPTION_SEPARATOR);
+  const [title, subline] = caption ? caption.split(CAPTION_SEPARATOR) : [];
 
   return (
     <Card as="figure" tone="frame" className="flex w-full flex-col p-3 shadow-card">
       <div className="overflow-hidden rounded-tile border border-border-card pb-0.75">
-        <Screen src={src} alt={alt} sizes="120px" aspect="aspect-phone" />
+        <Screen src={src} alt={alt} sizes="136px" aspect="aspect-phone" />
       </div>
-      <figcaption className="flex flex-col items-center px-1 pt-3 text-center">
-        <span className="text-caption font-medium text-text">{title}</span>
-        {subline && <span className="text-tag text-text-dim">{subline}</span>}
-      </figcaption>
+      {title && (
+        <figcaption className="flex flex-col items-center px-1 pt-3 text-center">
+          <span className="text-caption font-medium text-text">{title}</span>
+          {subline && <span className="text-tag text-text-dim">{subline}</span>}
+        </figcaption>
+      )}
     </Card>
   );
 }

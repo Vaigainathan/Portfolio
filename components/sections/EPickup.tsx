@@ -17,7 +17,7 @@ export function EPickup() {
   const details = [
     { label: "Role", items: [project.role] },
     { label: "Stack", items: project.stack },
-    { label: "Built", items: project.built },
+    { label: "Built", items: project.built ?? [] },
   ];
 
   return (
@@ -65,11 +65,11 @@ export function EPickup() {
 
         <div className="grid grid-cols-12 gap-6 pt-2">
           {browser && (
-            <div className="col-span-6 self-start">
+            <div className="col-span-7 self-start">
               <Frame image={browser} />
             </div>
           )}
-          <div className="col-span-6 flex gap-4 self-start">
+          <div className="col-span-5 flex gap-4 self-start">
             {phones.map((image) => (
               <div key={image.src} className="flex min-w-0 flex-1">
                 <Frame image={image} />
@@ -90,7 +90,7 @@ function Frame({ image }: { image: ProjectImage }) {
       variant={image.frame}
       src={image.src}
       alt={image.alt}
-      caption={image.caption ?? ""}
+      caption={image.caption}
       chromeLabel={image.chromeLabel}
     />
   );
