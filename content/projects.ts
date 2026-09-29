@@ -87,7 +87,7 @@ export const projects: Project[] = [
       },
       {
         frame: "phone",
-        src: "/images/epickup-driver.jpg",
+        src: "/images/epickup_driver.jpg",
         alt: "Delivery partner app home screen with today's deliveries and earnings, an online toggle, wallet balance and work slots",
         caption: "Delivery partner app — job routing",
       },

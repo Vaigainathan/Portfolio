@@ -27,7 +27,7 @@ export function StickyWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={contact.whatsapp}
-      className="fixed right-fab-right bottom-fab-bottom z-30 flex size-14 items-center justify-center rounded-pill bg-accent-action text-accent-action-text shadow-action md:hidden"
+      className="fixed right-fab-right bottom-fab-bottom z-30 flex size-14 items-center justify-center rounded-pill bg-accent-action text-accent-action-text shadow-action lg:hidden"
     >
       <Message size={22} />
     </a>

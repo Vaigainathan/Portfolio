@@ -76,7 +76,7 @@ export function Header() {
           <span className="absolute inset-x-0 bottom-0 h-px bg-border" />
         </div>
         <div className="relative mx-auto flex h-header max-w-content items-center justify-between lg:px-6">
-          <a href="#top" className="flex items-center gap-3" onClick={close}>
+          <a href="#top" className="flex min-h-tap items-center gap-3 lg:min-h-0" onClick={close}>
             <span className="size-2.5 rounded-pill bg-accent-gold shadow-logo-glow" aria-hidden="true" />
             <span className="text-logo text-text">{site.name}</span>
           </a>

@@ -52,7 +52,7 @@ export function ClientWork() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${clientWork.archiveLinkLabel} ${item.name}`}
-                        className="flex min-h-tap items-center gap-1 text-caption text-text-muted xl:min-h-0"
+                        className="flex min-h-tap min-w-tap items-center justify-center gap-1 text-caption text-text-muted xl:min-h-0 xl:min-w-0"
                       >
                         {clientWork.archiveLinkLabel}
                         <ArrowUpRight size={7.583} />
