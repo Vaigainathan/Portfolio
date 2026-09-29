@@ -1,26 +1,182 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Ground and surfaces */
+  --bg: #090a0c;
+  --bg-footer: #07080a;
+  --header-bg: rgba(9, 10, 12, 0.78);
+  --surface-from: #14171d;
+  --surface-to: #0e1014;
+  --surface: linear-gradient(to bottom, var(--surface-from), var(--surface-to));
+  --surface-2: rgba(24, 24, 27, 0.8);
+  --surface-2-soft: rgba(24, 24, 27, 0.6);
+  --glow-top: radial-gradient(
+    6364px circle at 640px 0,
+    rgba(61, 214, 140, 0.08) 0%,
+    rgba(61, 214, 140, 0) 70%
+  );
+
+  /* Borders — three opacities are deliberate depth layering */
+  --border: rgba(255, 255, 255, 0.06);
+  --border-card: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.1);
+
+  /* Text — close greys are deliberate depth layering */
+  --text-strong: #ffffff;
+  --text: #e4e4e7;
+  --text-soft: #d4d4d8;
+  --text-muted: #a1a1aa;
+  --text-dim: #71717a;
+  --text-faint: #52525b;
+  --gradient-headline: linear-gradient(
+    to right,
+    var(--text-muted),
+    var(--text-dim) 50%,
+    var(--text-faint)
+  );
+  --button-primary-bg: #f4f4f5;
+
+  /* Gold: section labels, metric numbers, status dots and status text */
+  --accent-gold: #c8a96b;
+  /* Teal: glow effects and tinted pill backgrounds only */
+  --accent-teal: #34d399;
+  --status-tint: rgba(16, 185, 129, 0.1);
+  --status-border: rgba(16, 185, 129, 0.2);
+  /* Action green: WhatsApp button only */
+  --accent-action: #25d366;
+  --accent-action-text: #09090b;
+
+  /* Sizing */
+  --header-height: 64px;
+  --cta-height: 48px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-bg-footer: var(--bg-footer);
+  --color-header-bg: var(--header-bg);
+  --color-surface-from: var(--surface-from);
+  --color-surface-to: var(--surface-to);
+  --color-surface-2: var(--surface-2);
+  --color-surface-2-soft: var(--surface-2-soft);
+
+  --color-border: var(--border);
+  --color-border-card: var(--border-card);
+  --color-border-strong: var(--border-strong);
+
+  --color-text-strong: var(--text-strong);
+  --color-text: var(--text);
+  --color-text-soft: var(--text-soft);
+  --color-text-muted: var(--text-muted);
+  --color-text-dim: var(--text-dim);
+  --color-text-faint: var(--text-faint);
+  --color-button-primary-bg: var(--button-primary-bg);
+
+  --color-accent-gold: var(--accent-gold);
+  --color-accent-teal: var(--accent-teal);
+  --color-status-tint: var(--status-tint);
+  --color-status-border: var(--status-border);
+  --color-accent-action: var(--accent-action);
+  --color-accent-action-text: var(--accent-action-text);
+
+  --spacing-header: var(--header-height);
+  --spacing-cta: var(--cta-height);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  /* Families come from next/font variables set on <html> in app/layout.tsx */
+  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-quote: var(--font-jakarta-italic), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
+
+  --text-display: 72px;
+  --text-display--line-height: 72px;
+  --text-display--letter-spacing: -1.8px;
+  --text-display--font-weight: 700;
+
+  --text-metric: 36px;
+  --text-metric--line-height: 40px;
+  --text-metric--letter-spacing: -0.9px;
+  --text-metric--font-weight: 500;
+
+  --text-lead: 20px;
+  --text-lead--line-height: 28px;
+  --text-lead--font-weight: 400;
+
+  --text-pill: 15px;
+  --text-pill--line-height: 16px;
+  --text-pill--letter-spacing: 0.3px;
+  --text-pill--font-weight: 500;
+
+  --text-logo: 14px;
+  --text-logo--line-height: 20px;
+  --text-logo--letter-spacing: -0.35px;
+  --text-logo--font-weight: 500;
+
+  /* Weight set per button: 600 primary, 500 secondary */
+  --text-button: 14px;
+  --text-button--line-height: 20px;
+
+  --text-card-title: 14px;
+  --text-card-title--line-height: 20px;
+  --text-card-title--letter-spacing: 0.35px;
+  --text-card-title--font-weight: 600;
+
+  /* Weight set per use: 400 nav links, 500 header CTA */
+  --text-nav: 12px;
+  --text-nav--line-height: 16px;
+
+  --text-card-body: 12px;
+  --text-card-body--line-height: 19.5px;
+  --text-card-body--font-weight: 400;
+
+  --text-unit: 12px;
+  --text-unit--line-height: 16px;
+  --text-unit--font-weight: 400;
+
+  --text-label: 11px;
+  --text-label--line-height: 16.5px;
+  --text-label--letter-spacing: 0.55px;
+  --text-label--font-weight: 500;
+
+  --text-status: 11px;
+  --text-status--line-height: 16.5px;
+  --text-status--font-weight: 700;
+
+  --radius-pill: 9999px;
+  --radius-card: 16px;
+  --radius-action: 12px;
+
+  --shadow-card: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-logo-glow: 0px 0px 10px 0px rgba(52, 211, 153, 0.6);
+  --shadow-action: 0px 10px 15px -3px rgba(37, 211, 102, 0.1),
+    0px 4px 6px -4px rgba(37, 211, 102, 0.1);
+
+  --blur-header: 8px;
+
+  --container-content: 1024px;
+  --container-hero: 896px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
