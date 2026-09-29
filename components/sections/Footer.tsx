@@ -18,7 +18,7 @@ export function Footer() {
                   <a
                     href={link.href}
                     {...(!isEmail && { target: "_blank", rel: "noopener noreferrer" })}
-                    className="flex min-h-tap items-center text-caption font-medium text-text-muted"
+                    className="flex min-h-tap items-center text-caption font-medium text-text-muted xl:min-h-0"
                   >
                     {link.label}
                   </a>

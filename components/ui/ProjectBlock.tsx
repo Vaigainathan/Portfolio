@@ -41,7 +41,7 @@ export function ProjectBlock({ project, testimonial, linkLabel, previewFirst = f
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex min-h-tap w-fit items-center gap-1.5 text-caption font-medium text-accent-gold"
+              className="flex min-h-tap w-fit items-center gap-1.5 text-caption font-medium text-accent-gold xl:min-h-0"
             >
               {linkLabel}
               <ArrowUpRight size={8.125} />
