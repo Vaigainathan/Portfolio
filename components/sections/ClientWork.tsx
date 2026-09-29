@@ -38,7 +38,7 @@ export function ClientWork() {
               {archive.map((item, index) => (
                 <li
                   key={item.name}
-                  className={`flex flex-col gap-2 py-4 xl:flex-row xl:items-center xl:justify-between ${index > 0 ? "border-t border-border" : ""}`}
+                  className={`hover-row-bright flex flex-col gap-2 py-4 xl:flex-row xl:items-center xl:justify-between ${index > 0 ? "border-t border-border" : ""}`}
                 >
                   <p className="flex flex-col gap-1 xl:flex-row xl:items-baseline xl:gap-4">
                     <span className="text-body-sm font-medium text-text-strong">{item.name}</span>

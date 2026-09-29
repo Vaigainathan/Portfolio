@@ -56,20 +56,20 @@ export function EPickup() {
         </div>
 
         {project.metrics && (
-          <div className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-3">
+          <div className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-3" data-reveal-stagger>
             {project.metrics.map((metric) => (
               <MetricCard key={metric.title} metric={metric} />
             ))}
           </div>
         )}
 
-        <div className="grid grid-cols-1 gap-6 pt-2 xl:grid-cols-12">
+        <div className="grid grid-cols-1 gap-6 pt-2 xl:grid-cols-12" data-parallax-root>
           {browser && (
-            <div className="self-start xl:col-span-7">
+            <div className="self-start xl:col-span-7" data-parallax="-16">
               <Frame image={browser} />
             </div>
           )}
-          <div className="flex gap-4 self-start xl:col-span-5">
+          <div className="flex gap-4 self-start xl:col-span-5" data-parallax="24">
             {phones.map((image) => (
               <div key={image.src} className="flex min-w-0 flex-1">
                 <Frame image={image} />
@@ -78,7 +78,11 @@ export function EPickup() {
           </div>
         </div>
 
-        {testimonial && <TestimonialCard testimonial={testimonial} />}
+        {testimonial && (
+          <div data-reveal>
+            <TestimonialCard testimonial={testimonial} />
+          </div>
+        )}
       </div>
     </section>
   );
@@ -100,13 +104,14 @@ function MetricCard({ metric }: { metric: ProjectMetric }) {
   const isStatus = metric.kind === "status";
 
   return (
-    <Card tone="stat" className={`flex flex-col p-6 ${isStatus ? "gap-2" : "gap-1"}`}>
+    <Card tone="stat" className={`flex flex-col p-6 ${isStatus ? "gap-2" : "gap-1"}`} data-reveal-item>
       <p
         className={
           isStatus
             ? "font-mono text-eyebrow text-accent-gold uppercase"
-            : "text-stat text-accent-gold"
+            : "tabular-nums text-stat text-accent-gold"
         }
+        {...(!isStatus ? { "data-count": "" } : {})}
       >
         {metric.value}
       </p>

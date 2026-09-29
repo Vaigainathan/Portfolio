@@ -17,7 +17,10 @@ export function ProjectBlock({ project, testimonial, linkLabel, previewFirst = f
   const tags = [project.role, ...project.stack];
 
   return (
-    <article className="flex flex-col overflow-hidden rounded-panel border border-border-project bg-surface-project xl:grid xl:grid-cols-12 xl:items-stretch">
+    <article
+      className="flex flex-col overflow-hidden rounded-panel border border-border-project bg-surface-project xl:grid xl:grid-cols-12 xl:items-stretch"
+      data-reveal
+    >
       <div
         className={`flex flex-col justify-between p-6 xl:col-span-5 xl:p-10 ${previewFirst ? "xl:order-last" : ""}`}
       >
@@ -52,11 +55,13 @@ export function ProjectBlock({ project, testimonial, linkLabel, previewFirst = f
 
       {image && (
         <div
-          className={`order-first flex items-center justify-center border-b border-border bg-surface-preview p-4 xl:col-span-7 xl:border-b-0 xl:p-8 ${
+          className={`order-first flex items-center justify-center overflow-hidden border-b border-border bg-surface-preview p-4 xl:col-span-7 xl:border-b-0 xl:p-8 ${
             previewFirst ? "xl:border-r" : "xl:border-l"
           }`}
         >
-          <DeviceFrame variant="screen" src={image.src} alt={image.alt} caption={image.caption} />
+          <div className="w-full" data-scale-in>
+            <DeviceFrame variant="screen" src={image.src} alt={image.alt} caption={image.caption} />
+          </div>
         </div>
       )}
     </article>

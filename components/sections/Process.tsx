@@ -18,9 +18,9 @@ export function Process() {
         </div>
 
         <div className="flex flex-col gap-10">
-          <ol className="grid grid-cols-1 gap-8 pt-2 md:grid-cols-2 xl:flex">
+          <ol className="grid grid-cols-1 gap-8 pt-2 md:grid-cols-2 xl:flex" data-reveal-stagger>
             {processSection.steps.map((step) => (
-              <li key={step.number} className="flex min-w-0 flex-col xl:flex-1">
+              <li key={step.number} className="flex min-w-0 flex-col xl:flex-1" data-reveal-item>
                 <span className="pb-3 font-mono text-step-number text-accent-gold" aria-hidden="true">
                   {step.number}
                 </span>

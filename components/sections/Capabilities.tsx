@@ -24,7 +24,10 @@ export function Capabilities() {
           <p className="max-w-2xl pt-2 text-body-lg text-text-muted">{capabilities.subline}</p>
         </div>
 
-        <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 lg:grid-cols-3"
+          data-reveal-stagger
+        >
           {capabilities.items.map((item) => (
             <CapabilityCard key={item.index} item={item} />
           ))}
@@ -36,7 +39,7 @@ export function Capabilities() {
 
 function CapabilityCard({ item }: { item: Capability }) {
   return (
-    <Card className="flex flex-col justify-between p-8">
+    <Card className="hover-border-bright flex flex-col justify-between p-8" data-reveal-item>
       <div className="flex flex-col gap-3 pb-6">
         <div className="flex items-center justify-between">
           <span className="flex size-10 items-center justify-center rounded-tile border border-status-border bg-status-tint text-accent-gold">

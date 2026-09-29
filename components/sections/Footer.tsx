@@ -2,7 +2,7 @@ import { footer } from "@/content/site";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-bg-footer px-4 pt-14 pb-14 md:px-8 xl:px-32">
+    <footer className="border-t border-border bg-bg-footer px-4 pt-14 pb-14 md:px-8 xl:px-32" data-reveal>
       <div className="mx-auto flex max-w-content flex-col items-start justify-between gap-6 px-2 md:px-4 xl:flex-row xl:items-center xl:px-6">
         <div className="flex flex-col gap-1.5">
           <p className="text-body-sm font-semibold text-text-strong">{footer.name}</p>

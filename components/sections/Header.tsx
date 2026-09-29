@@ -67,8 +67,15 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-border bg-header-bg px-4 backdrop-blur-header md:px-8 xl:px-32">
-        <div className="mx-auto flex h-header max-w-content items-center justify-between lg:px-6">
+      <header className="relative sticky top-0 z-50 px-4 pb-px md:px-8 xl:px-32">
+        <div
+          data-header-shade
+          className="pointer-events-none absolute inset-0 bg-header-bg backdrop-blur-header"
+          aria-hidden="true"
+        >
+          <span className="absolute inset-x-0 bottom-0 h-px bg-border" />
+        </div>
+        <div className="relative mx-auto flex h-header max-w-content items-center justify-between lg:px-6">
           <a href="#top" className="flex items-center gap-3" onClick={close}>
             <span className="size-2.5 rounded-pill bg-accent-gold shadow-logo-glow" aria-hidden="true" />
             <span className="text-logo text-text">{site.name}</span>

@@ -14,8 +14,10 @@ export function About() {
         <h2 id="about-heading" className="text-heading-sm font-semibold text-text-strong">
           {about.heading}
         </h2>
-        <p className="pt-4 text-pull-quote-sm text-accent-gold xl:text-pull-quote">{about.pullQuote}</p>
-        <div className="flex flex-col gap-5 pt-4 pb-6">
+        <p className="pt-4 text-pull-quote-sm text-accent-gold xl:text-pull-quote" data-reveal>
+          {about.pullQuote}
+        </p>
+        <div className="flex flex-col gap-5 pt-4 pb-6" data-reveal data-delay="0.16">
           {about.paragraphs.map((paragraph) => (
             <p key={paragraph} className="text-body-lg text-text-muted">
               {paragraph}

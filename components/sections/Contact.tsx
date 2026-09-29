@@ -9,7 +9,7 @@ export function Contact() {
       aria-labelledby="contact-heading"
       className="mx-auto w-full max-w-content px-6 py-24"
     >
-      <Card as="div" tone="panel" className="flex flex-col gap-12 overflow-hidden p-6 md:p-10 xl:p-14">
+      <Card as="div" tone="panel" className="flex flex-col gap-12 overflow-hidden p-6 md:p-10 xl:p-14" data-reveal>
         <div className="grid grid-cols-1 gap-10 xl:grid-cols-12">
           <div className="flex flex-col gap-4 self-center xl:col-span-7">
             <h2 id="contact-heading" className="text-heading text-text-strong">
@@ -25,6 +25,7 @@ export function Contact() {
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
+              data-magnetic
               className="flex min-h-tap items-center justify-between rounded-action bg-accent-action px-5 py-4 text-accent-action-text shadow-action"
             >
               <span className="flex items-center gap-2.5">

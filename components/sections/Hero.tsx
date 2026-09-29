@@ -23,11 +23,19 @@ export function Hero() {
       </div>
 
       <h1 className="mb-6 text-left text-display-sm md:text-center md:text-display-md xl:text-display xl:whitespace-nowrap">
-        <span className="block text-text-strong">{headlineTop}</span>
-        <span className="block font-semibold text-gradient-headline">{headlineBottom}</span>
+        <span className="block overflow-hidden">
+          <span className="block text-text-strong" data-mask-line>
+            {headlineTop}
+          </span>
+        </span>
+        <span className="block overflow-hidden">
+          <span className="block font-semibold text-gradient-headline" data-mask-line>
+            {headlineBottom}
+          </span>
+        </span>
       </h1>
 
-      <p className="mb-10 text-left text-lead text-text-muted md:text-center">
+      <p className="mb-10 text-left text-lead text-text-muted md:text-center" data-hero-after>
         {hero.subline.map((line, index) => (
           <span key={line} className={index > 0 ? "xl:block" : undefined}>
             {index > 0 && <span className="xl:hidden"> </span>}
@@ -36,7 +44,10 @@ export function Hero() {
         ))}
       </p>
 
-      <div className="flex w-full flex-col items-stretch gap-4 md:w-auto md:flex-row md:items-center md:justify-center">
+      <div
+        className="flex w-full flex-col items-stretch gap-4 md:w-auto md:flex-row md:items-center md:justify-center"
+        data-hero-after
+      >
         <a
           href={hero.primaryCta.href}
           className="flex h-cta min-h-tap w-full items-center justify-center gap-2 rounded-pill bg-button-primary-bg px-6 text-button font-semibold text-bg md:w-auto"
@@ -66,7 +77,7 @@ export function Hero() {
 
 function ProofCardItem({ card }: { card: ProofCard }) {
   return (
-    <Card className="flex flex-col p-7">
+    <Card className="flex flex-col p-7" data-hero-proof>
       <div className="flex flex-col gap-2 pb-1">
         <div className="flex h-status-pill items-center justify-between">
           <span className="font-mono text-label text-text-muted uppercase">{card.label}</span>
