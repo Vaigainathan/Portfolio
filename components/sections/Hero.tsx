@@ -91,7 +91,7 @@ function ProofCardItem({ card }: { card: ProofCard }) {
           <span className="text-metric text-accent-gold">{card.metric}</span>
           <span className="text-unit text-text-dim">{card.unit}</span>
         </p>
-        <h3 className="text-card-title text-text">{card.title}</h3>
+        <p className="text-card-title text-text">{card.title}</p>
       </div>
       <p className="pt-2 text-card-body text-text-dim">{card.body}</p>
     </Card>

@@ -70,6 +70,12 @@ export const contactDetails: ContactDetails = {
 export const whatsappHref = `https://wa.me/${contactDetails.whatsappNumber}?text=${encodeURIComponent(contactDetails.whatsappMessage)}`;
 export const mailtoHref = `mailto:${contactDetails.email}`;
 
+/** Canonical origin. Change this when a custom domain is attached. */
+export const siteUrl = "https://vaigainathan.vercel.app";
+
+export const siteDescription =
+  "Freelance developer in Bengaluru building websites, mobile apps and the systems behind them — WhatsApp and CRM integration, React Native apps, and admin dashboards.";
+
 export const contact: Contact = {
   heading: ["Have a project in mind?", "Tell me what you need."],
   body: "Every project is scoped on its own terms — tell me what you're building and I'll come back with a plan, a timeline and a clear quote.",

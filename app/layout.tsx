@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import { InitMotion } from "@/components/motion/InitMotion";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { SkipLink } from "@/components/ui/SkipLink";
+import { site, siteDescription, siteUrl } from "@/content/site";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -28,9 +31,33 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Vaigainathan — Web & Mobile App Developer",
-  description:
-    "Websites, mobile apps, WhatsApp and CRM integration — built in Bengaluru.",
+  description: siteDescription,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Vaigainathan — Web & Mobile App Developer",
+    description: siteDescription,
+    url: siteUrl,
+    siteName: site.name,
+    type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Vaigainathan — Web & Mobile App Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vaigainathan — Web & Mobile App Developer",
+    description: siteDescription,
+    images: ["/og.png"],
+  },
 };
 
 export const viewport: Viewport = {
@@ -44,6 +71,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${jakarta.variable} ${jakartaItalic.variable} ${jetbrains.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <SkipLink />
+        <JsonLd />
         <SmoothScroll />
         <InitMotion />
         {children}
