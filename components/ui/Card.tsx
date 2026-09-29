@@ -1,6 +1,6 @@
 import type { ComponentPropsWithoutRef } from "react";
 
-type CardTone = "raised" | "stat" | "quote" | "frame";
+type CardTone = "raised" | "stat" | "quote" | "frame" | "panel";
 
 type CardProps = ComponentPropsWithoutRef<"article"> & {
   as?: "article" | "figure" | "div";
@@ -8,12 +8,13 @@ type CardProps = ComponentPropsWithoutRef<"article"> & {
 };
 
 const tones: Record<CardTone, string> = {
-  raised: "border-border-card bg-surface shadow-card",
-  stat: "border-border bg-surface-stat",
-  quote: "border-border-card bg-surface-quote",
-  frame: "border-border-card bg-frame",
+  raised: "rounded-card border-border-card bg-surface shadow-card",
+  stat: "rounded-card border-border bg-surface-stat",
+  quote: "rounded-card border-border-card bg-surface-quote",
+  frame: "rounded-card border-border-card bg-frame",
+  panel: "rounded-panel border-border-card bg-surface shadow-panel",
 };
 
 export function Card({ as: Tag = "article", tone = "raised", className = "", ...props }: CardProps) {
-  return <Tag className={`rounded-card border ${tones[tone]} ${className}`} {...props} />;
+  return <Tag className={`border ${tones[tone]} ${className}`} {...props} />;
 }

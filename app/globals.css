@@ -19,6 +19,7 @@
   --surface-preview: #0b0c0e;
   --surface-band: #0d0e11;
   --surface-pill: #18181b;
+  --surface-action: rgba(24, 24, 27, 0.9);
 
   /* Device frames around product screenshots */
   --frame: #111317;
@@ -47,6 +48,7 @@
   --text-muted: #a1a1aa;
   --text-dim: #71717a;
   --text-faint: #52525b;
+  --text-separator: #3f3f46;
   /* Same value as --button-primary-bg; used for quote text */
   --text-bright: #f4f4f5;
   --gradient-headline: linear-gradient(
@@ -93,6 +95,7 @@
   --color-surface-preview: var(--surface-preview);
   --color-surface-band: var(--surface-band);
   --color-surface-pill: var(--surface-pill);
+  --color-surface-action: var(--surface-action);
 
   --color-frame: var(--frame);
   --color-frame-chrome: var(--frame-chrome);
@@ -112,6 +115,7 @@
   --color-text-muted: var(--text-muted);
   --color-text-dim: var(--text-dim);
   --color-text-faint: var(--text-faint);
+  --color-text-separator: var(--text-separator);
   --color-text-bright: var(--text-bright);
   --color-button-primary-bg: var(--button-primary-bg);
 
@@ -279,6 +283,7 @@
   --shadow-action: 0px 10px 15px -3px rgba(37, 211, 102, 0.1),
     0px 4px 6px -4px rgba(37, 211, 102, 0.1);
   --shadow-frame: 0px 25px 50px -12px rgba(0, 0, 0, 0.6);
+  --shadow-panel: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
 
   --blur-header: 8px;
   --blur-caption: 6px;
