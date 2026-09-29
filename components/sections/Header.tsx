@@ -1,16 +1,24 @@
 "use client";
 
-import { useCallback, useEffect, useId, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useLayoutEffect, useRef, useState } from "react";
 import { ArrowRight, Close, Menu } from "@/components/ui/icons";
 import { site } from "@/content/site";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
   const menuId = useId();
 
   const close = useCallback(() => setOpen(false), []);
+
+  useLayoutEffect(() => {
+    const sync = () => setScrolled(window.scrollY >= 80);
+    sync();
+    window.addEventListener("scroll", sync, { passive: true });
+    return () => window.removeEventListener("scroll", sync);
+  }, []);
 
   useEffect(() => {
     const media = window.matchMedia("(min-width: 1024px)");
@@ -70,7 +78,9 @@ export function Header() {
       <header className="relative sticky top-0 z-50 px-4 pb-px md:px-8 xl:px-32">
         <div
           data-header-shade
-          className="pointer-events-none absolute inset-0 bg-header-bg backdrop-blur-header"
+          className={`pointer-events-none absolute inset-0 bg-header-bg backdrop-blur-header transition-opacity duration-700 ease-out ${
+            scrolled ? "opacity-100" : "opacity-0"
+          }`}
           aria-hidden="true"
         >
           <span className="absolute inset-x-0 bottom-0 h-px bg-border" />

@@ -4,7 +4,6 @@ import { gsap, ScrollTrigger, useGSAP } from "@/lib/gsap";
 import {
   DURATION,
   EASE,
-  HEADER_SCROLL,
   MAGNETIC,
   prefersReducedMotion,
   STAGGER,
@@ -15,34 +14,18 @@ import {
 const fadeFrom = { opacity: 0, y: Y };
 const fadeTo = { opacity: 1, y: 0, duration: DURATION, ease: EASE };
 
+function isOnscreen(el: Element) {
+  const rect = el.getBoundingClientRect();
+  return rect.bottom > 0 && rect.top < window.innerHeight;
+}
+
 export function InitMotion() {
   useGSAP(() => {
     if (prefersReducedMotion()) return;
 
     const cleanups: Array<() => void> = [];
 
-    const shade = document.querySelector<HTMLElement>("[data-header-shade]");
-    if (shade) {
-      let shown = window.scrollY >= HEADER_SCROLL;
-      gsap.set(shade, { opacity: shown ? 1 : 0 });
-
-      const onScroll = () => {
-        const next = window.scrollY >= HEADER_SCROLL;
-        if (next === shown) return;
-        shown = next;
-        gsap.to(shade, {
-          opacity: next ? 1 : 0,
-          duration: DURATION,
-          ease: EASE,
-          overwrite: true,
-        });
-      };
-
-      window.addEventListener("scroll", onScroll, { passive: true });
-      cleanups.push(() => window.removeEventListener("scroll", onScroll));
-    }
-
-    const maskLines = gsap.utils.toArray<HTMLElement>("[data-mask-line]");
+    const maskLines = gsap.utils.toArray<HTMLElement>("[data-mask-line]").filter((el) => !isOnscreen(el));
     if (maskLines.length > 0) {
       gsap.set(maskLines, { yPercent: 100 });
       gsap.to(maskLines, {
@@ -55,13 +38,13 @@ export function InitMotion() {
 
     const headlineDone = maskLines.length > 0 ? DURATION + STAGGER : 0;
 
-    const heroAfter = gsap.utils.toArray<HTMLElement>("[data-hero-after]");
+    const heroAfter = gsap.utils.toArray<HTMLElement>("[data-hero-after]").filter((el) => !isOnscreen(el));
     if (heroAfter.length > 0) {
       gsap.set(heroAfter, fadeFrom);
       gsap.to(heroAfter, { ...fadeTo, delay: headlineDone, stagger: STAGGER });
     }
 
-    const proofs = gsap.utils.toArray<HTMLElement>("[data-hero-proof]");
+    const proofs = gsap.utils.toArray<HTMLElement>("[data-hero-proof]").filter((el) => !isOnscreen(el));
     if (proofs.length > 0) {
       gsap.set(proofs, fadeFrom);
       gsap.to(proofs, {
@@ -73,7 +56,7 @@ export function InitMotion() {
 
     document.querySelectorAll<HTMLElement>("[data-reveal-stagger]").forEach((parent) => {
       const items = parent.querySelectorAll<HTMLElement>("[data-reveal-item]");
-      if (items.length === 0) return;
+      if (items.length === 0 || isOnscreen(parent)) return;
       gsap.set(items, fadeFrom);
       gsap.to(items, {
         ...fadeTo,
@@ -87,6 +70,7 @@ export function InitMotion() {
     });
 
     document.querySelectorAll<HTMLElement>("[data-reveal]").forEach((el) => {
+      if (isOnscreen(el)) return;
       const delay = Number(el.dataset.delay) || 0;
       gsap.set(el, fadeFrom);
       gsap.to(el, {
@@ -101,6 +85,7 @@ export function InitMotion() {
     });
 
     document.querySelectorAll<HTMLElement>("[data-scale-in]").forEach((el) => {
+      if (isOnscreen(el)) return;
       gsap.set(el, { scale: 1.02 });
       gsap.to(el, {
         scale: 1,

@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
-import { InitMotion } from "@/components/motion/InitMotion";
-import { SmoothScroll } from "@/components/motion/SmoothScroll";
+import { MotionLazy } from "@/components/motion/MotionLazy";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { SkipLink } from "@/components/ui/SkipLink";
 import { site, siteDescription, siteUrl } from "@/content/site";
@@ -27,6 +26,7 @@ const jetbrains = JetBrains_Mono({
   weight: ["400", "500", "700", "800"],
   subsets: ["latin"],
   display: "swap",
+  preload: false,
   variable: "--font-jetbrains",
 });
 
@@ -73,8 +73,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <SkipLink />
         <JsonLd />
-        <SmoothScroll />
-        <InitMotion />
+        <MotionLazy />
         {children}
       </body>
     </html>
