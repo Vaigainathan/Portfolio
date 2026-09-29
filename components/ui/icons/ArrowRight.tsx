@@ -1,0 +1,20 @@
+import type { IconProps } from "./types";
+
+export function ArrowRight({ size, ...props }: IconProps) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 10.6667 10.6667"
+      fill="none"
+      aria-hidden="true"
+      focusable="false"
+      {...props}
+    >
+      <path
+        d="M8.11667 6H0V4.66667H8.11667L4.38333 0.933333L5.33333 0L10.6667 5.33333L5.33333 10.6667L4.38333 9.73333L8.11667 6V6"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}

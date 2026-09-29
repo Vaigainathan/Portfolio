@@ -49,6 +49,8 @@
   /* Sizing */
   --header-height: 64px;
   --cta-height: 48px;
+  /* Hero content sits 192px from the page top; the sticky header occupies 64px + 1px border of flow */
+  --hero-offset: calc(192px - var(--header-height) - 1px);
 }
 
 @theme inline {
@@ -81,6 +83,7 @@
 
   --spacing-header: var(--header-height);
   --spacing-cta: var(--cta-height);
+  --spacing-hero-offset: var(--hero-offset);
 }
 
 @theme {
@@ -160,8 +163,20 @@
   --container-hero: 896px;
 }
 
+@utility text-gradient-headline {
+  background-image: var(--gradient-headline);
+  background-clip: text;
+  color: transparent;
+}
+
+@utility bg-surface {
+  background-image: var(--surface);
+}
+
 body {
   background-color: var(--bg);
+  background-image: var(--glow-top);
+  background-repeat: no-repeat;
   color: var(--text);
   font-family: var(--font-body);
 }

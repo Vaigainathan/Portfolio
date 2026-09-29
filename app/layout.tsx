@@ -14,6 +14,7 @@ const jakartaItalic = Plus_Jakarta_Sans({
   style: "italic",
   subsets: ["latin"],
   display: "swap",
+  preload: false,
   variable: "--font-jakarta-italic",
 });
 
