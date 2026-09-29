@@ -4,8 +4,6 @@
 //   #process       — Process
 //   #about         — About
 //   #contact       — Contact CTA
-//   #e-pickup      — E-Pickup case study
-
 export type Link = {
   label: string;
   href: string;

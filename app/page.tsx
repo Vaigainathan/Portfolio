@@ -1,4 +1,5 @@
 import { Capabilities } from "@/components/sections/Capabilities";
+import { EPickup } from "@/components/sections/EPickup";
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <main>
         <Hero />
         <Capabilities />
+        <EPickup />
       </main>
     </>
   );
