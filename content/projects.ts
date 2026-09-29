@@ -59,8 +59,8 @@ export const projects: Project[] = [
       {
         kind: "figure",
         value: "3",
-        title: "Live Apps + Dashboard",
-        body: "Customer, delivery partner and admin apps running in daily production, with the shop app in testing.",
+        title: "Live Apps",
+        body: "Customer, delivery partner and admin apps running in daily production, plus the admin dashboard. Shop app in testing.",
       },
       {
         kind: "status",
@@ -148,7 +148,7 @@ export const clientWork = {
 export const archive: ArchiveItem[] = [
   {
     name: "Radcam Technologies",
-    description: "Industrial machinery catalogue and spec index",
+    description: "Sheet-metal machinery supplier — product range and spec index",
     tags: ["Design & WordPress"],
     liveUrl: "https://radcamtechnologies.com/",
   },

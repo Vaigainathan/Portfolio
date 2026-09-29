@@ -132,8 +132,8 @@ export const site: Site = {
         status: "Live",
         metric: "3",
         unit: "apps",
-        title: "Live Apps + Dashboard",
-        body: "Customer, delivery partner and admin apps running in daily production.",
+        title: "Live Apps",
+        body: "Customer, delivery partner and admin apps running in daily production, plus the admin dashboard. Shop app in testing.",
       },
       {
         label: "User base",
@@ -141,7 +141,7 @@ export const site: Site = {
         metric: "200+",
         unit: "active",
         title: "Active Customers",
-        body: "Recurring local orders handled every day since launch.",
+        body: "Local customers ordering through the platform since launch.",
       },
       {
         label: "Ownership",

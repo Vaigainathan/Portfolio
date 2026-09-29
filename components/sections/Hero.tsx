@@ -28,6 +28,7 @@ export function Hero() {
             {headlineTop}
           </span>
         </span>
+        <span className="sr-only"> </span>
         <span className="block overflow-hidden">
           <span className="block font-semibold text-gradient-headline" data-mask-line>
             {headlineBottom}
