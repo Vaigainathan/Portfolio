@@ -9,12 +9,12 @@ export function About() {
       aria-labelledby="about-heading"
       className="mx-auto w-full max-w-content border-b border-border px-6 pt-24 pb-24"
     >
-      <div className="flex max-w-3xl flex-col items-start gap-4">
+      <div className="flex max-w-xl flex-col items-start gap-4 md:max-w-2xl xl:max-w-3xl">
         <SectionLabel>{about.label}</SectionLabel>
         <h2 id="about-heading" className="text-heading-sm font-semibold text-text-strong">
           {about.heading}
         </h2>
-        <p className="pt-4 text-pull-quote text-accent-gold">{about.pullQuote}</p>
+        <p className="pt-4 text-pull-quote-sm text-accent-gold xl:text-pull-quote">{about.pullQuote}</p>
         <div className="flex flex-col gap-5 pt-4 pb-6">
           {about.paragraphs.map((paragraph) => (
             <p key={paragraph} className="text-body-lg text-text-muted">

@@ -9,9 +9,9 @@ export function Contact() {
       aria-labelledby="contact-heading"
       className="mx-auto w-full max-w-content px-6 py-24"
     >
-      <Card as="div" tone="panel" className="flex flex-col gap-12 overflow-hidden p-14">
-        <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-7 flex flex-col gap-4 self-center">
+      <Card as="div" tone="panel" className="flex flex-col gap-12 overflow-hidden p-6 md:p-10 xl:p-14">
+        <div className="grid grid-cols-1 gap-10 xl:grid-cols-12">
+          <div className="flex flex-col gap-4 self-center xl:col-span-7">
             <h2 id="contact-heading" className="text-heading text-text-strong">
               {contact.heading[0]}
               <br />
@@ -20,12 +20,12 @@ export function Contact() {
             <p className="text-body-lg text-text-muted">{contact.body}</p>
           </div>
 
-          <div className="col-span-5 flex flex-col gap-3.5 self-center">
+          <div className="flex flex-col gap-3.5 self-center xl:col-span-5">
             <a
               href={whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-between rounded-action bg-accent-action px-5 py-4 text-accent-action-text shadow-action"
+              className="flex min-h-tap items-center justify-between rounded-action bg-accent-action px-5 py-4 text-accent-action-text shadow-action"
             >
               <span className="flex items-center gap-2.5">
                 <Message size={16.667} />
@@ -36,7 +36,7 @@ export function Contact() {
 
             <a
               href={mailtoHref}
-              className="flex items-center gap-2.5 rounded-action border border-border-strong bg-surface-action px-5 py-4"
+              className="flex min-h-tap items-center gap-2.5 rounded-action border border-border-strong bg-surface-action px-5 py-4"
             >
               <Mail size={16.667} className="text-text-muted" />
               <span className="text-button font-medium whitespace-nowrap text-text">{contact.email}</span>
@@ -44,7 +44,7 @@ export function Contact() {
           </div>
         </div>
 
-        <ul className="flex gap-6 border-t border-border pt-8">
+        <ul className="flex flex-col gap-6 border-t border-border pt-8 md:flex-row">
           {contact.reassurance.map((item) => (
             <li key={item.title} className="flex min-w-0 flex-1 flex-col gap-0.875">
               <p className="text-caption font-medium text-text-strong">{item.title}</p>

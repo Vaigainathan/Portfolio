@@ -6,7 +6,7 @@ export function Process() {
     <section
       id="process"
       aria-labelledby="process-heading"
-      className="border-y border-border bg-surface-band px-32 py-24"
+      className="border-y border-border bg-surface-band px-4 py-24 md:px-8 xl:px-32"
     >
       <div className="mx-auto flex max-w-content flex-col gap-14 px-6">
         <div className="flex max-w-2xl flex-col gap-2">
@@ -18,9 +18,9 @@ export function Process() {
         </div>
 
         <div className="flex flex-col gap-10">
-          <ol className="flex gap-8 pt-2">
+          <ol className="grid grid-cols-1 gap-8 pt-2 md:grid-cols-2 xl:flex">
             {processSection.steps.map((step) => (
-              <li key={step.number} className="flex min-w-0 flex-1 flex-col">
+              <li key={step.number} className="flex min-w-0 flex-col xl:flex-1">
                 <span className="pb-3 font-mono text-step-number text-accent-gold" aria-hidden="true">
                   {step.number}
                 </span>
