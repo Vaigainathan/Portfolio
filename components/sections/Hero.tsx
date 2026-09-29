@@ -14,28 +14,32 @@ export function Hero() {
   const [headlineTop, headlineBottom] = hero.headline;
 
   return (
-    <section id="top" className="mx-auto flex max-w-hero flex-col items-center pt-hero-offset pb-24">
+    <section
+      id="top"
+      className="mx-auto flex w-full max-w-hero flex-col items-start px-4 pt-hero-offset pb-24 md:items-center md:px-6 xl:px-0"
+    >
       <div className="mb-8 flex">
         <Pill>{hero.pill}</Pill>
       </div>
 
-      <h1 className="mb-6 text-center text-display whitespace-nowrap">
+      <h1 className="mb-6 text-left text-display-sm md:text-center md:text-display-md xl:text-display xl:whitespace-nowrap">
         <span className="block text-text-strong">{headlineTop}</span>
         <span className="block font-semibold text-gradient-headline">{headlineBottom}</span>
       </h1>
 
-      <p className="mb-10 text-center text-lead text-text-muted">
-        {hero.subline.map((line) => (
-          <span key={line} className="block">
+      <p className="mb-10 text-left text-lead text-text-muted md:text-center">
+        {hero.subline.map((line, index) => (
+          <span key={line} className={index > 0 ? "xl:block" : undefined}>
+            {index > 0 && <span className="xl:hidden"> </span>}
             {line}
           </span>
         ))}
       </p>
 
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex w-full flex-col items-stretch gap-4 md:w-auto md:flex-row md:items-center md:justify-center">
         <a
           href={hero.primaryCta.href}
-          className="flex h-cta items-center gap-2 rounded-pill bg-button-primary-bg px-6 text-button font-semibold text-bg"
+          className="flex h-cta min-h-tap w-full items-center justify-center gap-2 rounded-pill bg-button-primary-bg px-6 text-button font-semibold text-bg md:w-auto"
         >
           {hero.primaryCta.label}
           <span className="flex w-3.5">
@@ -44,14 +48,14 @@ export function Hero() {
         </a>
         <a
           href={hero.secondaryCta.href}
-          className="flex h-cta items-center gap-2 rounded-pill border border-border-strong bg-surface-2-soft px-5 text-button font-medium text-text-soft"
+          className="flex h-cta min-h-tap w-full items-center justify-center gap-2 rounded-pill border border-border-strong bg-surface-2-soft px-5 text-button font-medium text-text-soft md:w-auto"
         >
           {hero.secondaryCta.label}
           <ArrowDown size={10.667} className="text-text-dim" />
         </a>
       </div>
 
-      <div className="mt-16 grid w-full grid-cols-3 items-stretch gap-6 border-t border-border-card pt-8">
+      <div className="mt-16 grid w-full grid-cols-1 items-stretch gap-6 border-t border-border-card pt-8 md:grid-cols-3">
         {hero.proofCards.map((card) => (
           <ProofCardItem key={card.label} card={card} />
         ))}

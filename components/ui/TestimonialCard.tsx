@@ -29,12 +29,12 @@ export function TestimonialCard({ testimonial, variant = "card" }: TestimonialCa
   }
 
   return (
-    <Card as="div" tone="quote" className="overflow-hidden p-9">
+    <Card as="div" tone="quote" className="overflow-hidden p-6 xl:p-9">
       <figure className="flex max-w-3xl flex-col gap-6">
-        <blockquote className="text-lead text-text-bright">
+        <blockquote className="text-lead-sm text-text-bright xl:text-lead">
           <p>“{testimonial.quote}”</p>
         </blockquote>
-        <figcaption className="flex items-center gap-3">
+        <figcaption className="flex flex-col gap-3 md:flex-row md:items-center">
           <span
             className="flex size-12 shrink-0 items-center justify-center rounded-pill border border-border-strong bg-avatar-bg text-body-sm font-semibold text-text"
             aria-hidden="true"

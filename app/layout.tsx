@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { JetBrains_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -29,6 +29,10 @@ export const metadata: Metadata = {
   title: "Vaigainathan — Web & Mobile App Developer",
   description:
     "Websites, mobile apps, WhatsApp and CRM integration — built in Bengaluru.",
+};
+
+export const viewport: Viewport = {
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

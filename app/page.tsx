@@ -7,6 +7,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Process } from "@/components/sections/Process";
+import { StickyWhatsApp } from "@/components/sections/StickyWhatsApp";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <StickyWhatsApp />
     </>
   );
 }

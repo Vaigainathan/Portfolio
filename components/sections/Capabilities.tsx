@@ -24,7 +24,7 @@ export function Capabilities() {
           <p className="max-w-2xl pt-2 text-body-lg text-text-muted">{capabilities.subline}</p>
         </div>
 
-        <div className="grid grid-cols-3 items-stretch gap-6">
+        <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2 xl:grid-cols-3">
           {capabilities.items.map((item) => (
             <CapabilityCard key={item.index} item={item} />
           ))}

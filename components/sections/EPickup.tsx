@@ -24,7 +24,7 @@ export function EPickup() {
     <section
       id="e-pickup"
       aria-labelledby="e-pickup-heading"
-      className="border-y border-border bg-band px-32 py-24"
+      className="border-y border-border bg-band px-4 py-24 md:px-8 xl:px-32"
     >
       <div className="mx-auto flex max-w-content flex-col gap-12 px-6">
         <div className="flex max-w-2xl flex-col">
@@ -56,20 +56,20 @@ export function EPickup() {
         </div>
 
         {project.metrics && (
-          <div className="grid grid-cols-3 items-stretch gap-5">
+          <div className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-3">
             {project.metrics.map((metric) => (
               <MetricCard key={metric.title} metric={metric} />
             ))}
           </div>
         )}
 
-        <div className="grid grid-cols-12 gap-6 pt-2">
+        <div className="grid grid-cols-1 gap-6 pt-2 xl:grid-cols-12">
           {browser && (
-            <div className="col-span-7 self-start">
+            <div className="self-start xl:col-span-7">
               <Frame image={browser} />
             </div>
           )}
-          <div className="col-span-5 flex gap-4 self-start">
+          <div className="flex gap-4 self-start xl:col-span-5">
             {phones.map((image) => (
               <div key={image.src} className="flex min-w-0 flex-1">
                 <Frame image={image} />

@@ -77,6 +77,9 @@
   --hero-offset: calc(192px - var(--header-height) - 1px);
   /* Height of the small status pill: 16.5px line + 2px padding + 1px border, each side */
   --status-pill-height: 22.5px;
+  --tap: 44px;
+  --fab-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  --fab-right: calc(1rem + env(safe-area-inset-right, 0px));
 }
 
 @theme inline {
@@ -131,6 +134,9 @@
   --spacing-cta: var(--cta-height);
   --spacing-hero-offset: var(--hero-offset);
   --spacing-status-pill: var(--status-pill-height);
+  --spacing-tap: var(--tap);
+  --spacing-fab-bottom: var(--fab-bottom);
+  --spacing-fab-right: var(--fab-right);
 }
 
 @theme {
@@ -145,6 +151,16 @@
   --text-display--letter-spacing: -1.8px;
   --text-display--font-weight: 700;
 
+  --text-display-md: 56px;
+  --text-display-md--line-height: 60px;
+  --text-display-md--letter-spacing: -1.4px;
+  --text-display-md--font-weight: 700;
+
+  --text-display-sm: 40px;
+  --text-display-sm--line-height: 44px;
+  --text-display-sm--letter-spacing: -1px;
+  --text-display-sm--font-weight: 700;
+
   --text-metric: 36px;
   --text-metric--line-height: 40px;
   --text-metric--letter-spacing: -0.9px;
@@ -153,6 +169,10 @@
   --text-lead: 20px;
   --text-lead--line-height: 28px;
   --text-lead--font-weight: 400;
+
+  --text-lead-sm: 18px;
+  --text-lead-sm--line-height: 28px;
+  --text-lead-sm--font-weight: 400;
 
   --text-pill: 15px;
   --text-pill--line-height: 16px;
@@ -213,8 +233,8 @@
   --text-card-heading--letter-spacing: -0.5px;
   --text-card-heading--font-weight: 700;
 
-  --text-body: 14px;
-  --text-body--line-height: 22.75px;
+  --text-body: 15px;
+  --text-body--line-height: 24px;
   --text-body--font-weight: 400;
 
   --text-tag: 11px;
@@ -268,6 +288,10 @@
   --text-pull-quote: 24px;
   --text-pull-quote--line-height: 32px;
   --text-pull-quote--font-weight: 400;
+
+  --text-pull-quote-sm: 20px;
+  --text-pull-quote-sm--line-height: 28px;
+  --text-pull-quote-sm--font-weight: 400;
 
   --radius-pill: 9999px;
   --radius-card: 16px;

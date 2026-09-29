@@ -38,9 +38,9 @@ export function ClientWork() {
               {archive.map((item, index) => (
                 <li
                   key={item.name}
-                  className={`flex items-center justify-between py-4 ${index > 0 ? "border-t border-border" : ""}`}
+                  className={`flex flex-col gap-2 py-4 xl:flex-row xl:items-center xl:justify-between ${index > 0 ? "border-t border-border" : ""}`}
                 >
-                  <p className="flex items-baseline gap-4">
+                  <p className="flex flex-col gap-1 xl:flex-row xl:items-baseline xl:gap-4">
                     <span className="text-body-sm font-medium text-text-strong">{item.name}</span>
                     <span className="text-caption text-text-dim">{item.description}</span>
                   </p>
@@ -52,7 +52,7 @@ export function ClientWork() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${clientWork.archiveLinkLabel} ${item.name}`}
-                        className="flex items-center gap-1 text-caption text-text-muted"
+                        className="flex min-h-tap items-center gap-1 text-caption text-text-muted"
                       >
                         {clientWork.archiveLinkLabel}
                         <ArrowUpRight size={7.583} />

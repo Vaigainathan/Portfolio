@@ -25,7 +25,7 @@ export function DeviceFrame({ variant, src, alt, caption, chromeLabel }: DeviceF
   if (variant === "screen") {
     return (
       <figure className="w-full overflow-hidden rounded-card border border-border-card shadow-card">
-        <Screen src={src} alt={alt} sizes="505px" aspect="aspect-desktop" />
+        <Screen src={src} alt={alt} sizes="(max-width: 1279px) 100vw, 505px" aspect="aspect-desktop" />
       </figure>
     );
   }
@@ -45,7 +45,7 @@ export function DeviceFrame({ variant, src, alt, caption, chromeLabel }: DeviceF
         </div>
         <div className="bg-frame-well p-3">
           <div className="relative overflow-hidden rounded-tile border border-border-card">
-            <Screen src={src} alt={alt} sizes="535px" aspect="aspect-desktop" />
+            <Screen src={src} alt={alt} sizes="(max-width: 1279px) 100vw, 535px" aspect="aspect-desktop" />
             {caption && (
               <figcaption className="absolute bottom-3 left-3 rounded-caption border border-border-strong bg-caption-bg px-3 py-1.5 text-caption font-medium text-text backdrop-blur-caption">
                 {caption}
@@ -62,7 +62,7 @@ export function DeviceFrame({ variant, src, alt, caption, chromeLabel }: DeviceF
   return (
     <Card as="figure" tone="frame" className="flex w-full flex-col p-3 shadow-card">
       <div className="overflow-hidden rounded-tile border border-border-card pb-0.75">
-        <Screen src={src} alt={alt} sizes="136px" aspect="aspect-phone" />
+        <Screen src={src} alt={alt} sizes="(max-width: 1279px) 45vw, 136px" aspect="aspect-phone" />
       </div>
       {title && (
         <figcaption className="flex flex-col items-center px-1 pt-3 text-center">
