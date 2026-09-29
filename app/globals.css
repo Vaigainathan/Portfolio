@@ -244,6 +244,10 @@
   --blur-header: 8px;
   --blur-caption: 6px;
 
+  /* Screenshot slots: desktop captures are 1917 x 1198; phone captures are cropped to Figma's 1:2 slot */
+  --aspect-desktop: 16 / 10;
+  --aspect-phone: 1 / 2;
+
   --container-content: 1024px;
   --container-hero: 896px;
 }

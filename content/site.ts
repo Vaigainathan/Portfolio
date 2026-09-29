@@ -65,7 +65,7 @@ export const site: Site = {
         metric: "3",
         unit: "apps",
         title: "Live Apps + Dashboard",
-        body: "Customer, delivery partner and admin apps running in daily production.",
+        body: "Customer, delivery partner and shop apps, plus the admin dashboard, in daily production.",
       },
       {
         label: "User base",
