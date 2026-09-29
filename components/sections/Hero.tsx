@@ -16,9 +16,9 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="mx-auto flex w-full max-w-hero flex-col items-start px-4 pt-hero-offset pb-24 md:items-center md:px-6 xl:px-0"
+      className="mx-auto flex w-full max-w-hero flex-col items-start px-4 pt-hero-offset pb-16 md:items-center md:px-6 xl:px-0"
     >
-      <div className="mb-8 flex">
+      <div className="mb-5 flex">
         <Pill>{hero.pill}</Pill>
       </div>
 
@@ -35,7 +35,7 @@ export function Hero() {
         </span>
       </h1>
 
-      <p className="mb-10 text-left text-lead text-text-muted md:text-center" data-hero-after>
+      <p className="mb-6 text-left text-lead text-text-muted md:text-center" data-hero-after>
         {hero.subline.map((line, index) => (
           <span key={line} className={index > 0 ? "xl:block" : undefined}>
             {index > 0 && <span className="xl:hidden"> </span>}
@@ -66,7 +66,7 @@ export function Hero() {
         </a>
       </div>
 
-      <div className="mt-16 grid w-full grid-cols-1 items-stretch gap-6 border-t border-border-card pt-8 md:grid-cols-3">
+      <div className="mt-8 grid w-full grid-cols-1 items-stretch gap-6 border-t border-border-card pt-6 md:grid-cols-3">
         {hero.proofCards.map((card) => (
           <ProofCardItem key={card.label} card={card} />
         ))}

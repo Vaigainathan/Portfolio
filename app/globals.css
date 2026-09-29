@@ -73,8 +73,8 @@
   /* Sizing */
   --header-height: 64px;
   --cta-height: 48px;
-  /* Hero content sits 192px from the page top; the sticky header occupies 64px + 1px border of flow */
-  --hero-offset: calc(192px - var(--header-height) - 1px);
+  /* Space below the sticky header before the availability pill */
+  --hero-offset: 2.5rem;
   /* Height of the small status pill: 16.5px line + 2px padding + 1px border, each side */
   --status-pill-height: 22.5px;
   --tap: 44px;
