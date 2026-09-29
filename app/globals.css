@@ -17,6 +17,7 @@
   --avatar-bg: #27272a;
   --surface-project: #121417;
   --surface-preview: #0b0c0e;
+  --surface-band: #0d0e11;
 
   /* Device frames around product screenshots */
   --frame: #111317;
@@ -55,7 +56,7 @@
   );
   --button-primary-bg: #f4f4f5;
 
-  /* Gold: section labels, metric numbers, status indicators, capability icons and links */
+  /* Gold: section labels, metric numbers, step numbers, status indicators, capability icons and links */
   --accent-gold: #c8a96b;
   /* Teal: glow effects and tinted pill backgrounds only */
   --accent-teal: #34d399;
@@ -89,6 +90,7 @@
   --color-avatar-bg: var(--avatar-bg);
   --color-surface-project: var(--surface-project);
   --color-surface-preview: var(--surface-preview);
+  --color-surface-band: var(--surface-band);
 
   --color-frame: var(--frame);
   --color-frame-chrome: var(--frame-chrome);
@@ -244,6 +246,18 @@
   --text-attribution--line-height: 16px;
   --text-attribution--letter-spacing: 0.3px;
   --text-attribution--font-weight: 500;
+
+  --text-step-number: 16px;
+  --text-step-number--line-height: 16px;
+  --text-step-number--font-weight: 800;
+
+  --text-step-title: 20px;
+  --text-step-title--line-height: 24px;
+  --text-step-title--font-weight: 600;
+
+  --text-step-body: 15px;
+  --text-step-body--line-height: 20px;
+  --text-step-body--font-weight: 400;
 
   --radius-pill: 9999px;
   --radius-card: 16px;

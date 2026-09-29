@@ -3,6 +3,7 @@ import { ClientWork } from "@/components/sections/ClientWork";
 import { EPickup } from "@/components/sections/EPickup";
 import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
+import { Process } from "@/components/sections/Process";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Capabilities />
         <EPickup />
         <ClientWork />
+        <Process />
       </main>
     </>
   );

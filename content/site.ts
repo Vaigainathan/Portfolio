@@ -1,6 +1,5 @@
 // TODO before launch: each anchor below needs a section with the matching id,
 // or it becomes a dead link.
-//   #process       — Process
 //   #about         — About
 //   #contact       — Contact CTA
 export type Link = {
