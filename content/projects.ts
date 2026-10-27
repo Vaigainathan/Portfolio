@@ -15,6 +15,11 @@ export type ProjectMetric = {
   kind: "figure" | "status";
 };
 
+export type ProjectLink = {
+  label: string;
+  href: string;
+};
+
 export type Project = {
   slug: string;
   name: string;
@@ -26,6 +31,7 @@ export type Project = {
   stack: string[];
   built?: string[];
   liveUrl?: string;
+  links?: ProjectLink[];
   images: ProjectImage[];
   testimonial?: Testimonial["id"];
   heading?: string;
@@ -45,10 +51,11 @@ export const projects: Project[] = [
     slug: "e-pickup",
     name: "E-Pickup",
     category: "Flagship project · Tirupattur",
-    heading: "Built it. Launched it. Still keeping it running.",
+    heading: "Built it. Shipped it. Grew it into a marketplace.",
     summary:
-      "Lead developer for E-Pickup, a delivery startup in Tirupattur — maintaining the platform every month since launch.",
-    body: "A delivery service for a town the big apps don't reach. Customers book pickups, delivery partners take jobs with live routing, and the team runs drivers, bookings and tracking from one dashboard.",
+      "Lead developer for E-Pickup, a delivery startup in Tirupattur. I built the original parcel platform and then its new local marketplace.",
+    body:
+      "E-Pickup started as a parcel service for a town the big apps don't reach. I've extended it into a local marketplace. Shops list their products, customers order from them inside the same app, and E-Pickup's own riders deliver from the shop to the doorstep.",
     metrics: [
       {
         kind: "figure",
@@ -58,20 +65,35 @@ export const projects: Project[] = [
       },
       {
         kind: "figure",
-        value: "3",
+        value: "4",
         title: "Live Apps",
-        body: "Customer, delivery partner and admin apps running in daily production, plus the admin dashboard. Shop app in testing.",
+        body: "Customer, delivery partner and shop apps on Google Play, plus the admin dashboard.",
       },
       {
         kind: "status",
-        value: "Now building",
-        title: "Merchant Marketplace",
-        body: "Expanding into a local marketplace so any shop in town can list and sell.",
+        value: "Shipped",
+        title: "Local Marketplace",
+        body: "Any shop in town can now list and sell through E-Pickup. Orders go to the shop's own app, then on to a delivery partner.",
       },
     ],
     role: "Full-stack development — architecture to launch, plus monthly maintenance",
-    stack: ["React Native", "Expo", "Node.js", "Firebase"],
-    built: ["Customer app", "Delivery partner app", "Admin dashboard", "Shop app (in testing)"],
+    stack: ["React Native", "Expo", "TypeScript", "Node.js", "Firebase"],
+    built: [
+      "Customer app: parcel booking plus shop marketplace",
+      "Delivery partner app",
+      "Shop app, a new app built from scratch",
+      "Admin dashboard",
+    ],
+    links: [
+      {
+        label: "Customer app on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.customer.epickup",
+      },
+      {
+        label: "Delivery partner app on Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.driver.epickup",
+      },
+    ],
     images: [
       {
         frame: "browser",
@@ -82,8 +104,14 @@ export const projects: Project[] = [
       {
         frame: "phone",
         src: "/images/epickup-customer.jpg",
-        alt: "Customer app home screen with a map and fields to choose the pickup location, drop-off location and package weight",
-        caption: "Customer app — booking & tracking",
+        alt: "Customer app Shop tab showing local shop categories and a list of shops to order from",
+        caption: "Customer app, shop marketplace",
+      },
+      {
+        frame: "phone",
+        src: "/images/epickup-shop.jpg",
+        alt: "Shop app screen showing incoming marketplace orders for a local shop",
+        caption: "Shop app, order management",
       },
       {
         frame: "phone",

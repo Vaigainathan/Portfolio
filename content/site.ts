@@ -130,10 +130,10 @@ export const site: Site = {
       {
         label: "Fleet scale",
         status: "Live",
-        metric: "3",
+        metric: "4",
         unit: "apps",
         title: "Live Apps",
-        body: "Customer, delivery partner and admin apps running in daily production, plus the admin dashboard. Shop app in testing.",
+        body: "Customer, delivery partner and shop apps on Google Play, plus the admin dashboard.",
       },
       {
         label: "User base",

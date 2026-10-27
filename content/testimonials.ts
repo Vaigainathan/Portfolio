@@ -11,7 +11,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "bhoopathy-epickup",
     quote:
-      "Vaigainathan built our customer app, driver app and admin dashboard, and has kept everything running since launch. When something breaks, it gets fixed fast. We've now brought him back to build our marketplace upgrade.",
+      "Vaigainathan first built our customer app, driver app and admin dashboard. Now he's turned E-Pickup into a local marketplace, with a new shop app and shops in town selling through our platform. Same as before: on time, and quick to fix anything that comes up.",
     name: "Bhoopathy K",
     title: "E-Pickup",
     approved: true,

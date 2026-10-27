@@ -32,7 +32,7 @@ export const capabilities: CapabilitiesSection = {
       index: "02",
       icon: "smartphone",
       title: "Mobile apps, from MVP to launch",
-      body: "Most apps stall in the final stretch: login edge cases, notifications that don't arrive, data that drifts out of sync. I've taken a three-app delivery platform through exactly that to live users.",
+      body: "Most apps stall in the final stretch: login edge cases, notifications that don't arrive, data that drifts out of sync. I've taken a four-app delivery platform through exactly that to live users.",
       tags: ["React Native", "Expo", "Android", "Play Store"],
     },
     {

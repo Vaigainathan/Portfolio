@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/Card";
 import { DeviceFrame } from "@/components/ui/DeviceFrame";
+import { ArrowUpRight } from "@/components/ui/icons";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { TagChip } from "@/components/ui/TagChip";
 import { TestimonialCard } from "@/components/ui/TestimonialCard";
@@ -53,6 +54,24 @@ export function EPickup() {
               </div>
             ))}
           </div>
+
+          {project.links && project.links.length > 0 && (
+            <div className="mt-4 flex flex-col gap-2 pt-1.5">
+              {project.links.map((link) => (
+                <p key={link.href} className="pb-0.5">
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex min-h-tap w-fit items-center gap-1.5 text-caption font-medium text-accent-gold xl:min-h-0"
+                  >
+                    {link.label}
+                    <ArrowUpRight size={8.125} />
+                  </a>
+                </p>
+              ))}
+            </div>
+          )}
         </div>
 
         {project.metrics && (
@@ -63,15 +82,18 @@ export function EPickup() {
           </div>
         )}
 
-        <div className="grid grid-cols-1 gap-6 pt-2 xl:grid-cols-12" data-parallax-root>
+        <div className="flex flex-col gap-6 pt-2" data-parallax-root>
           {browser && (
-            <div className="self-start xl:col-span-7" data-parallax="-16">
+            <div className="w-full" data-parallax="-16">
               <Frame image={browser} />
             </div>
           )}
-          <div className="flex gap-4 self-start xl:col-span-5" data-parallax="24">
+          <div
+            className="mx-auto grid w-full max-w-[584px] grid-cols-2 justify-items-center gap-4 md:max-w-[888px] md:grid-cols-3 md:gap-6"
+            data-parallax="24"
+          >
             {phones.map((image) => (
-              <div key={image.src} className="flex min-w-0 flex-1">
+              <div key={image.src} className="w-full max-w-[280px] min-w-0">
                 <Frame image={image} />
               </div>
             ))}
